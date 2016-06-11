@@ -1,0 +1,35 @@
+/*
+Feat
+    name
+    description
+    prerequisites
+    benefit
+    special
+    normal
+    misc (array)
+        heading
+        body
+---------TEMPLATE----------
+{name : ,
+ description : ,
+ prerequisites : ,
+ benefit : ,
+ special : ,
+ normal : ,
+ misc : [
+    {heading : ,
+     body : },
+    {heading : ,
+     body : },
+     ...
+ ]}
+*/
+
+var FeatsJSON = [
+    {name : "Acrobatic Strike",
+     description : "You desxterous meneuvers and skilled acrobatics allow you to slip past a foe's defenses and deliver an accurate strike against him.",
+     prerequisites : "Trained in Acrobatics skill.",
+     benefit : "If you succeed in tumbling to avoid an attack of opportunity (See Acrobatics skill), you gain a +5 bonus on the next attack that you make against that foe as long as the attack occurs before the end of your current turn."
+    }
+    
+]
