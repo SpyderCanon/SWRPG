@@ -1,0 +1,14 @@
+var species = [{name: "Humans",
+                description : "Humans dominate the Core Worlds and can be found in virtually every corner of the galaxy. They are the ancestors of early spacefaring pioneers, conquerors, traders, travelers, and refugees. Humans have always been people on the move. As a result, they can be found on almost every inhabited planet. As a species, Humans are physically, culturally, and politically diverse. Hardy or fine, light-skinned or dark, Humans remain one of the most dominant species throughout all eras of play.",
+                personality : "Human personality runs the gamut of possibilities, though members of this species tend to be highly adaptable, tenacious, and willing to keep striving no matter the odds. They are flexible and ambitious, diverse in their tastes, morals, customs, and habits. ",
+                physicalDescription : "Humans average about 1.8 meters tall. Skin shades run from nearly black to very pale, hair from black to blond. Men are usually taller and heavier than women. Humans achieve maturity about the age of 15 and rarely live beyond 100.",
+                homeworlds : "Various, including Coruscant, Corellia, Naboo, Tatooine, and Alderaan.",
+                languages : "Humans speak, read, and write Basic. They often learn other languages as well, including obscure ones.",
+                exampleNames : "Anakin, Arani, Bail, Ben, Beru, Biggs, Boba, Corran, Dack, Dane, Galak, Garm, Han, Jango, Jodo, Lando, Leia, Luke, Mace, Mara, Obi-Wan, Owen, Padme, Qui-Gon, Sia-Lan, Rann, Talon, Vor'en, Wedge, Winter.",
+                adventures : "Humans aren't afraid to try anything, and Human adventurers are the most audacious, daring, and ambitious members of an audacious, daring, and ambitious species. A Human can earn glory by amassing power, weath, and fame. More than any other species, Humans champion causes rather than territories or groups.",
+                speciesTraits : {
+                size : "Medium",
+                speed : "Human base speed is six squares.",
+                speedInSquares : 6,
+                misc : [{heading : "Bonus Trained Skill", body : "Humans are versatile and accomplished at many tasks. A Human character chooses one additional trained skill at 1st level."}]
+                }}]
