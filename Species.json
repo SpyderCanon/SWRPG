@@ -49,7 +49,7 @@ var species = [{name: "Humans",
                 speedInSquares : 6,
                 misc : [{heading : "Bonus Trained Skill", body : "Humans are versatile and accomplished at many tasks. A Human character chooses one additional trained skill at 1st level."}]
                 },
-                {name : "Blood Carver",
+                { name : "Blood Carver",
                 description : "Blood Carvers are a mysterious race rarely seen outsid their homeworld of Batorine. Those that leave, however, do so because they have been exiled. They gravitate tword the finnges of society because the Blood Carvers' reputation for being fearsome assassins. Except for exiles, Blood Carvers rarely act alone, and exiles find new tribes (often like-minded members of other species) to associate with. Freed from cultural restrictions, Blood Carvers seek out personal wealth, but most are content to get by with a moderate amount of comfort.",
                 personality : "on Batorine, Blood Carvers are fiercely loyal to their tribes and tribal leaders. Those who venture into the galaxy carry vestiges of this loyalty, transfering it to new allies made away from their home planet. Blood Carvers are unusually disdainful of material wealth and egotism, and find flattery and excess offensive. Blood Carvers strive to stamp out such traits, and some Blood Carvers are exiled from Batorine for showing hints of greed, gluttony, or pride.",
                 physicalDescription : "Vaguely humanoid with golden skin, beaklike noses, and dark eyes, Blood Carvers are taller than Humans, despite their triple-segmented legs, Blood Carvers wear space, close-fitting clothing that allows them to move about with relative quiet, and they rarely, if ever, adorn themselves with jewelry. Tribal tatoos are common on Blood Carvers",
@@ -61,9 +61,10 @@ var species = [{name: "Humans",
                   abilityModifiers : "+2 Dexterity, -2 Wisdom, -2 Charisma. Blood Carvers are extremely agile but lack social skills.",
                   size : "Medium",
                   speed : "As Medium creatures, Blood Carvers have no special bonuses or penalties due to size",
-                  conditionalBonusFeat : "Blood Carvers who have Acrobatics as a trained skill gain Skill Focus (Acrobatics) as a bonus feat",
-                  deathStrike : " Whenever a Blood Carver makes a melee attack against an opponent that is denied its Dexterity bonus to Reflex Defense, the Blood Carver's attack, if successful, deals +1 die of damage.",
-                  automaticLanguages : "Basic and Batorese"
+                  speedInSquares : 6,
+                  misc : [{heading : "conditionalBonusFeat", body : "Blood Carvers who have Acrobatics as a trained skill gain Skill Focus (Acrobatics) as a bonus feat"},
+                  {heading : "deathStrike", body: "Whenever a Blood Carver makes a melee attack against an opponent that is denied its Dexterity bonus to Reflex Defense, the Blood Carver's attack, if successful, deals +1 die of damage.",},
+                  {heading :"  automaticLanguages", body : "Basic and Batorese" }]
                   }
                 }
                 }]
