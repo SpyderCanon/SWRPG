@@ -65,7 +65,7 @@ var species = [{name: "Humans",
                   speed : 6,
                   misc : [{heading : "conditionalBonusFeat", body : "Blood Carvers who have Acrobatics as a trained skill gain Skill Focus (Acrobatics) as a bonus feat"},
                   {heading : "deathStrike", body: "Whenever a Blood Carver makes a melee attack against an opponent that is denied its Dexterity bonus to Reflex Defense, the Blood Carver's attack, if successful, deals +1 die of damage.",},
-                  {heading :"  Automatic Languages", body : "Basic and Batorese" }]
+                  {heading :"Automatic Languages", body : "Basic and Batorese" }]
                   }
                 },
                 {name : "Clawdite",
