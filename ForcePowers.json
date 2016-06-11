@@ -1,0 +1,61 @@
+/*
+Force Power
+    name
+    description
+    time
+    target
+    Use the Force Check
+    special
+    source
+----------TEMPLATE----------
+{
+    name : ,
+    description : ,
+    time : ,
+    target : ,
+    makeUTFCheck : ,
+    special : ,
+    source : 
+}
+*/
+var ForcePowers = [{
+    name: "Battle Strike",
+    description: "You use the Force to enhance your battle prowess.",
+    time: "Swift action.",
+    target: "You.",
+    makeUTFCheck: "The result of the determines the effect, if any:\nDC 15: Gain a +1 Force bonus on your next attack roll and deal an additional 1d6 points of damage if the attack hits.\nDC20: As DC 15, except you deal an additional 2d6 points of damage.\nAD 25: As DC15, except you deal and additional 3d6 points of damage.",
+    special: "You can spend a Force Point to deal an additional 2d6 points of damage on your next attack.",
+    source : "Core Rulebook"
+}, {
+    name: "Dark Rage (Dark Side)",
+    description: "You become enranged as the dark side flows through you.",
+    time: "Swift action.",
+    target: "You",
+    makeUTFCheck: "The result of the check determines the effect, if any:\nDC 15: You gain a +2 rage bonus on melee attack rolls and melee damage rolls until the end of your turn.\nDC 20: As DC 15, except the rage bonuses increase to +4.\nDC 25: As DC15, except the rage bonuses increase to +6.",
+    special: "While consumed by rage, you cannot use skills or perform tasks that require patience or concentration.\nYou can spend a Force Point to extend the duration of your /dark rage/ until the end of the encounter.",
+    source: "Core Rulebook"
+}, {
+    name : "Farseeing",
+    description : "You gain a vague, momentary impression of events happening around a particular being in some distant place.",
+    time : "Full-round action.",
+    target : "One creature you know of have met before.",
+    makeUTFCheck : "If your check result is less than the target's Will Defense, you gain no information (including whether the target is alive or dead) and cannot use this Force power against the same target for 24 hours. If your check result equals or exceeds the target's Will Defense, you can sense whether the target is alive or dead and gain a vague sense of its immediate surroundings, what is't currently doing, and any strong emotions it is presently feeling. A dead target has a Will Defense of 30 for purposes of this Force Power.",
+    special : "If you successfully use this Force power, you can spend a Force Point to gain a clear mental image of the target's surroundings, as well as other creatures and objects within 6 squares of it.",
+    source : "Core Rulebook"
+},{
+    name : "Force Disarm",
+    description : "You disarm an opponent using the Force to pull the weapon from his grasp.",
+    time : "Standard Action",
+    target : "One creature within 6 squares and within line of sight.",
+    makeUTFCheck : "Use this check in place of your attack roll when attempting to disarm the target (See Disarm). If your disarm attack succeeds, you may choose to let the item drop to the ground in the target's fighting space or have the item fly into your hand (in which case you must have a free hand to catch it).",
+    special : "Feats that improve disarm attacks (such as Improved Disarm) do not apply to Force Disarm.\nYou can spend a Force Point to damage or destroy the target weapon instead. If your disarm attack succeedsm, the weapon takes damage equal to your Use the Force check result. You must declare that you are using this option before making your disarm attack.",
+    source : "Core Rulebook"
+},{
+    name : "Force Grip",
+    description : "You use the Force to choke or crush you enemy.",
+    time : "Standard action.",
+    target : "One target within 6 squares or within line of sight.",
+    makeUTFCheck : "The result of the check determines the effect if any:\nDC 15: The target takes 2d6 points of damage. If your Use the Force check equals or exceeds the target's Fortitude Defense, the target can take only a single swift action on his next turn.\nDC 20: A DC 15, except the target takes 4d6 points of damage.\nDC 25: As DC 15, except target takes 6d6 points of damage.",
+    special : "You may maintain your concentration on the targeted creature to continue damaging it from round to round. Maintaining the Force Grip is a standard action, and you must make a new Use the Force check each round.\nYou can spend a Force Point to deal an additional 2d6 points of damange with your Force Grip.",
+    source : "Core Rulebook"
+}]
