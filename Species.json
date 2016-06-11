@@ -1,3 +1,40 @@
+/*
+Species
+    name
+    description
+    personality
+    physical description
+    homeworlds
+    exampleNames
+    adventures
+    speciesTraits
+        size
+        speedText
+        speed       (integer representing the number of squares)
+        misc (array)
+            heading (Heading of the additional section)
+            body (body of the additional section)
+----------TEMPLATE----------
+{name : ,
+ dsecription : ,
+ personality : ,
+ physicalDescription : ,
+ homeworlds : ,
+ languages : ,
+ exampleNames : ,
+ adventures : ,
+ speciesTraits : {
+    size : ,
+    speedText : ,
+    speed : ,
+    misc : [
+        {heading : ,
+         body : }
+    ]
+ }
+}
+*/
+
 var species = [{name: "Humans",
                 description : "Humans dominate the Core Worlds and can be found in virtually every corner of the galaxy. They are the ancestors of early spacefaring pioneers, conquerors, traders, travelers, and refugees. Humans have always been people on the move. As a result, they can be found on almost every inhabited planet. As a species, Humans are physically, culturally, and politically diverse. Hardy or fine, light-skinned or dark, Humans remain one of the most dominant species throughout all eras of play.",
                 personality : "Human personality runs the gamut of possibilities, though members of this species tend to be highly adaptable, tenacious, and willing to keep striving no matter the odds. They are flexible and ambitious, diverse in their tastes, morals, customs, and habits. ",
