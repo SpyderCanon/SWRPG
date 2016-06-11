@@ -116,4 +116,31 @@ var species = [{name: "Humans",
                     ]
                  }
                },
+               {name : "Gand",
+                dsecription : "A strange species of insect creatures, the Gand have evolved in responce to the toxic atmosphere of their homeworld. In fact, two distinct types of Gand exitst. The more common has features typical of other species- lungs and the usuall assortmaent of internal organs. The other ype- rarely found outside Gand- has no lungs, and take in nutrients it needs through the material it consumes. Since the Gand cannot tolerate other atmospheres, and outsiders cannot breathe Gand's atmosphere, the species of this far-flung world developed without outside interference, resulting in a rich culture with peculiarities. The most notable aspect of the gand is their lack of individual itentity. A Gand must earn his name, his place, and his uniqueness through personal accomplishments. As such, the loweliest Gand see themselves as nothing more than aspects of the same whole.  The gand rarely permit non-Gand onto their world. Insular to the point of xenophobia, Gand have learned what can happen to the delicate balance of their society when they allow offworlders to pollute their people with the ideas of independance and self-worth. The closest most ever to come the the planet's surface are orbiting space stations, the principle hubs of Gand trand and commerce.",
+                personality : "Gand seem humble, soft-spoken, and self-deprecating. Until a Gand has achieved something of import, a Gand refers to itself as simply 'Gand' As the Gand achieves more accomplishments, it earns its identity from moving the third persion to the first person and eventually gaining a name. If Gand missteps or fails, it will likely demot itself until it repairs the damage to its character.",
+                physicalDescription : "Short, stocky, and fleshy in appearance, Gand have three fingers on each hand, and their faces are lumpy and unsettling. Gand have large, mutifaceted eyes that betray little emotion. All Gand encountered off-world use a special breathing apparatus that fits snugly into theri facial oriface.",
+                homeworlds : "Gand come from the poisonous world of Gand.",
+                languages : "Gand lack the organs to speak any language other than Gand and, therefor, rely on transliterators to communicate in other tongues.",
+                exampleNames : "Muulish, Ooryl, Shoolush, Vaabesh, Zaabahn, Zuckuss",
+                adventures : "Gand Leave their homeworld for a variety of reasons, usually as exiles, driven forth from their worlds and condemned to wander. Other occupy a silgularly unique role as mystic hunters called Findsmen.  Walking the path of truth, as they see it, they explore the galaxy, taking work as gaurdians, soldiers, and more commonly, as bounty hunters.",
+                speciesTraits : {
+                   abilityModifiers : "+2 Wisdom, -2 Charisma. Gand society values widsom and cunning buth their off-putting appearance and strange manner make them difficult to understand.",
+                   size : "Medium",
+                   speedText : "As Medium creatures, Gand have no special bonuses or penalties due to size.",
+                   speed : 6,
+                   misc : [
+                       {heading : "Darkvision",
+                        body : "Gand ignore concealment (including total concealment) from darkness. However, the cannot percieve color in total darkness"},
+                        {heading : "Hardy",
+                         body : "Gand ar etough and resilient, capable of shrugging off injuries that would cripple other species. Whenever a Gand uses second wind, it regains a number of additional hit points equal to 5 + its character level."},
+                         {heading : "Special Equipment",
+                          body : "The dependence of the Gand on the atmosphere of their homeworld restricts their ability to leave without use of specialized equipment. Without a breathing apparatus, a Gand will sufficate. Without a transliterator, a Gand cannot communicate in any language other than Gand. A breathing apparatus costs 2000 credits, and a year's supply of breathing filters cost 200 credits (50 credits on Gand). A transliterator costs 100 credits. A Gand character begins play with these items at no cost."},
+                          {heading : "Limb Regeneration",
+                           body : "A Gand regrows a lost limb in 1d10 days. At the end of this time, all persistent penalties associated with the loss of the limb are removed."},
+                           {heading : "Automatic Languages",
+                            body : "Gand"}
+                   ]
+                }
+              },
                 }]
