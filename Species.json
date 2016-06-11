@@ -90,5 +90,57 @@ var species = [{name: "Humans",
                            body : "Basic and Clawdite"}
                        ]
                   }
-                  }
+                },
+                {name : "Falleen",
+                 dsecription : "Of all the species to populate the galaxy, none are better known for their intoxicating appearance than the Falleen. An exotic reptilian people, they are favored for their chiseled physques and entrancing features. These qualities alone would solidfy their place among the more handsome species, but their pheromones make them irresistible to other species. Their gifts and allure enable the Falleen to move through other cultures with ease, but despite their advantages, Falleen prefer to remain mysterious, withdrawing wo their own world in their own system. They do not lack the technology or wherewithal to venture out into the stars, but their cultural predilections make such ventures undesirable. The Falleen regard themselves and their civilization to be among the greatest in the galaxy, and looking beyond their world, they find only chaos and strife-the products of crudity and backward beings. Associations with other species, therefor, are risky to the Falleen and are approached with caution. Falleen culture reinforces the sense of superiority that prevades this species. Their rigid caste society confines them to societal roles and provides stability and a sense of purpose. Other systems are far looser, with little to no regard for quality of birth or station. Rather than contaminate themselves and endanger their social system, the Falleen are content to remain apart from the rest of the galaxy",
+                 personality : "Falleen are notoriously sparce with words, reticent to the point of being withdrawn. Falleen believe emotional displays ar eunsophisticated. Theefore, they work to control their moods and expressions, deeply burying the wellspring of feelings that boil within.",
+                 physicalDescription : "The Falleen are a reptilian species that have a similar shape and size to Humans. Delecate blue-green Scales, supple and flexible, cover their bodies, growing thicker and harder where they cover their spines. Falleen can and do grow hair, and for many, their hair is a point of pride. They wear their black tresses long, pulled up into topknots or back in elaborate braids. Some adorn their luxuriant hair with combs, beads, and ornate nets made of priceless wire and gemstones.",
+                 homeworlds : "The Falleen hail from a wrld of the same name in the Mid Rim",
+                 languages : "Basic and Falleen",
+                 exampleNames : "Savan, Xad, Xist, Xizor, Xora, Zule, Zurros",
+                 adventures : "Falleen adventurers are privileged youth, the scions of the wealthy and powerful. It is customary on Falleen for young adults to embark on pilgrimages into the galaxy to explore and learn about other cultures. During this time, the Falleen pilgrims are expected to engage with other cultures,m finding their failings and successes. When the Falleen comes of age and claims her place at the head of her people, she can use her experiences to better rule her subjects.",
+                 speciesTraits : {
+                    abilityModifiers : "-2 Wisdom, +2 Charisma. Falleen possess uncommon magnetism and great interpersonal skills.",
+                    size : "Medium",
+                    speedText : "As medium creatures, Falleen have no special bonuses or penalties due to size",
+                    speed : 6,
+                    misc : [
+                        {heading : "Hold Breath",
+                         body : "Falleen are at home in air or water. A falleen can hold her breath for a number of rounds equal to 25 times her Constitution score before she needs to make Endurance checks."},
+                         {heading : "Pheromones",
+                          body : "As a standard action, a Falleen can make a special attack against any adjacent creature. The attack modifier is equal to the Falleen's character level plus her Charisma modifier. If the attack equals for beats the target's fortitude Defense, That target moves -1 step along the condition track. If you fail to beat the targes's Fortitude Defense, the target is immune to your pheromones for 24 hours. When the target is reduced a total of -5 steps, instead of falling unconscious, the target's attitued improves to friendly. Pheromones function as an inhaled poison. Any creature holding its breath is unaffected. A creature can be affected by Falleen pheromones only once per round. Multiple exposures to pheromones from different Falleen in the same round produce no additional effects. A hostile creature cannot be targeted by this effect."},
+                          {heading : "Pheromone Acclimation",
+                           body : "Falleen gain a +5 species bonus to their Fortitude Defense against the pheromones of other Falleen."},
+                           {heading : "Automatic Languages",
+                            body : "Basic and Falleen"}
+                    ]
+                 }
+               },
+               {name : "Gand",
+                dsecription : "A strange species of insect creatures, the Gand have evolved in responce to the toxic atmosphere of their homeworld. In fact, two distinct types of Gand exitst. The more common has features typical of other species- lungs and the usuall assortmaent of internal organs. The other ype- rarely found outside Gand- has no lungs, and take in nutrients it needs through the material it consumes. Since the Gand cannot tolerate other atmospheres, and outsiders cannot breathe Gand's atmosphere, the species of this far-flung world developed without outside interference, resulting in a rich culture with peculiarities. The most notable aspect of the gand is their lack of individual itentity. A Gand must earn his name, his place, and his uniqueness through personal accomplishments. As such, the loweliest Gand see themselves as nothing more than aspects of the same whole.  The gand rarely permit non-Gand onto their world. Insular to the point of xenophobia, Gand have learned what can happen to the delicate balance of their society when they allow offworlders to pollute their people with the ideas of independance and self-worth. The closest most ever to come the the planet's surface are orbiting space stations, the principle hubs of Gand trand and commerce.",
+                personality : "Gand seem humble, soft-spoken, and self-deprecating. Until a Gand has achieved something of import, a Gand refers to itself as simply 'Gand' As the Gand achieves more accomplishments, it earns its identity from moving the third persion to the first person and eventually gaining a name. If Gand missteps or fails, it will likely demot itself until it repairs the damage to its character.",
+                physicalDescription : "Short, stocky, and fleshy in appearance, Gand have three fingers on each hand, and their faces are lumpy and unsettling. Gand have large, mutifaceted eyes that betray little emotion. All Gand encountered off-world use a special breathing apparatus that fits snugly into theri facial oriface.",
+                homeworlds : "Gand come from the poisonous world of Gand.",
+                languages : "Gand lack the organs to speak any language other than Gand and, therefor, rely on transliterators to communicate in other tongues.",
+                exampleNames : "Muulish, Ooryl, Shoolush, Vaabesh, Zaabahn, Zuckuss",
+                adventures : "Gand Leave their homeworld for a variety of reasons, usually as exiles, driven forth from their worlds and condemned to wander. Other occupy a silgularly unique role as mystic hunters called Findsmen.  Walking the path of truth, as they see it, they explore the galaxy, taking work as gaurdians, soldiers, and more commonly, as bounty hunters.",
+                speciesTraits : {
+                   abilityModifiers : "+2 Wisdom, -2 Charisma. Gand society values widsom and cunning buth their off-putting appearance and strange manner make them difficult to understand.",
+                   size : "Medium",
+                   speedText : "As Medium creatures, Gand have no special bonuses or penalties due to size.",
+                   speed : 6,
+                   misc : [
+                       {heading : "Darkvision",
+                        body : "Gand ignore concealment (including total concealment) from darkness. However, the cannot percieve color in total darkness"},
+                        {heading : "Hardy",
+                         body : "Gand ar etough and resilient, capable of shrugging off injuries that would cripple other species. Whenever a Gand uses second wind, it regains a number of additional hit points equal to 5 + its character level."},
+                         {heading : "Special Equipment",
+                          body : "The dependence of the Gand on the atmosphere of their homeworld restricts their ability to leave without use of specialized equipment. Without a breathing apparatus, a Gand will sufficate. Without a transliterator, a Gand cannot communicate in any language other than Gand. A breathing apparatus costs 2000 credits, and a year's supply of breathing filters cost 200 credits (50 credits on Gand). A transliterator costs 100 credits. A Gand character begins play with these items at no cost."},
+                          {heading : "Limb Regeneration",
+                           body : "A Gand regrows a lost limb in 1d10 days. At the end of this time, all persistent penalties associated with the loss of the limb are removed."},
+                           {heading : "Automatic Languages",
+                            body : "Gand"}
+                   ]
+                }
+              },
                 }]
