@@ -47,7 +47,7 @@ var species = [{name: "Humans",
                 size : "Medium",
                 speed : "Human base speed is six squares.",
                 speedInSquares : 6,
-                misc : [{heading : "Bonus Trained Skill", body : "Humans are versatile and accomplished at many tasks. A Human character chooses one additional trained skill at 1st level."}]
+                misc : [{heading : "Bonus Trained Skill", body : "Humans are versatile and accomplished at many tasks. A Human character chooses one additional trained skill at 1st level."}, {heading : "Bonus Feat", body : "Humans choose one bonus feat at 1st level"}, {heading : "automaticLanguages", body : "Basic" }]
                 },
                 { name : "Blood Carver",
                 description : "Blood Carvers are a mysterious race rarely seen outsid their homeworld of Batorine. Those that leave, however, do so because they have been exiled. They gravitate tword the finnges of society because the Blood Carvers' reputation for being fearsome assassins. Except for exiles, Blood Carvers rarely act alone, and exiles find new tribes (often like-minded members of other species) to associate with. Freed from cultural restrictions, Blood Carvers seek out personal wealth, but most are content to get by with a moderate amount of comfort.",
