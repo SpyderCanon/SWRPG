@@ -143,4 +143,31 @@ var species = [{name: "Humans",
                    ]
                 }
               },
+              {name : "Jawa",
+               dsecription : "Jawas are short humanoids native to Tatooine. The Jawas have a poor reputation and are regarded as thieves at best, vermin at worst.  Their off-putting nature is made worse by the sour smell that clings to them and their inxplicable and nonsensical language. Jawas survive by scavenging lost technology in the desert wastes. 'Lost' for Jawas is ambiguous; they are likely to snatch up anything thats't not bolted down. Moisture farmers and others who live far from the spaceports regularly find that their belongings have vanished in the night with only tell-tale jawa tracks leading off into the wasteland. Jawas are intelligent and have a complex society. Gathering in extended tribes, Jawa life revolves around trade- for for wealth, but for survival. Jawas look for guidance from their shamans, usually a female Jawa with the ability to portend the future and cast vicious hexes. Once a yesr, the Jawa tribes gather in the Dune Sea to exchange sons and daughters, to swap stories and news, and to mingle amoung their own kind",
+               personality : "Jawas are peaceful, preferring flight to confrontations. They are, however, extremely cunning and capable of great treachery if given cause. A fleeing Jawa seeks out its allies and comes back in numbers to deal with threats. Even then, Jawas rarely confront tieir enemies directly, preferring to sabotage or steal vital equipment and let the desert do the nasty work for them. A Jawa can become fierce-even vicous- when cornered or when a shaman is threatened.",
+               physicalDescription : "Jawas wear brown hooded cloaks to protect themselves from the oppressive heat of the twin suns of Tatooine. They dip their clothing in a rancid soup to better seal in their mositure. This gives them their infamously unpleasant odor. Jawas have sensitive, glowing orange eyes and are easily blinded by bright light. Beneath their coverings, Jawas are slight rodent creatures with tiny hands and feet.",
+               homeworlds : "Jawas ar efound almost exclusively on Tatooine.",
+               languages : "The Jawa tongue is a complex language that involves as much gesture and smells as it does sounds. Lacking the organs to form words in Basic, and confronted with the fact that other races cannot speak Jawa, they developed a shorthand speech called Jawa Trade Language. It essentially simplifies their tongue to aid trading between themselves and non-Jawas.",
+               exampleNames : "Akkit, Het, Oklect, Klepti, Tikkit, Tteel",
+               adventures : "Family is the heart of Jawa Society  and as such, they are loath to leave their extended tribal groups. A lone Jawa likely has been driven out of its tribe, or it might be a lone survivor of an attack by Sand People of other desert denizens.",
+               speciesTraits : {
+                  abilityModifiers : "-2 Strength, +2 Dexterity. Jawas requick and agile, but they lack the strength of larger creatures.",
+                  size : "Small",
+                  speedText : "As Small creatures, Jawas gain a +1 size bonus to their Reflex Defence and +5 size bonus on Stealth checks. However, their lifting and carrying limits are three-quarters of those medium creatures.",
+                  speed : 4,
+                  misc : [
+                      {heading : "Darkvision",
+                       body : "Jawas ignore concealment (including total concealment) from darkness. However, they cannot percieve colors in total darkness."},
+                       {heading : "Desert Dweller",
+                        body : "When making Survival checks to resist the effects of extreme heat, Jawas can reroll the check and keep the better result."},
+                        {heading : "Scavenger",
+                         body : "Whenever a Jawa armed with an ion weapon successfully damages a droid or vehicle, the Jawa adds half its level in ion damage."},
+                         {heading : "Skills",
+                          body : "Mechanics is always a class skill for Jawas. A Java can choose to re-roll any Mechanics check, but must keep the second result, even if it is worse."},
+                          {heading : "Automatic Languages",
+                           body : "Jawa, Jawa Trade Language"},
+                  ]
+               }
+              }
                 }]
