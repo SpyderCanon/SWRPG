@@ -10,6 +10,17 @@ Feat
         heading
         body
 ---------TEMPLATE----------
+BASIC:
+{
+    name: ,
+    description: ,
+    prerequisites: ,
+    benefit: ,
+    normal: ,
+    special: ,
+    source:
+}
+FULL:
 {name : ,
  description : ,
  prerequisites : ,
@@ -26,10 +37,380 @@ Feat
 */
 
 var FeatsJSON = [
-    {name : "Acrobatic Strike",
-     description : "You desxterous meneuvers and skilled acrobatics allow you to slip past a foe's defenses and deliver an accurate strike against him.",
-     prerequisites : "Trained in Acrobatics skill.",
-     benefit : "If you succeed in tumbling to avoid an attack of opportunity (See Acrobatics skill), you gain a +5 bonus on the next attack that you make against that foe as long as the attack occurs before the end of your current turn."
+    {
+        name: "Acrobatic Strike",
+        description: "You dexterous manuevers and skilled acrobatics allow you to slip past a foe's defenses and deliver an accurate strike against him.",
+        prerequisites: "Trained in Acrobatics skill.",
+        benefit: "If you succeed in tumbling to avoid an attack of opportunity (See Acrobatics skill), you gain a +5 bonus on the next attack that you make against that foe as long as the attack occurs before the end of your current turn."
+    }, {
+        name: "Armor Proficiency (Heavy)",
+        description: "You are proficient with heavy armor and can wear it without impediment.",
+        prerequisites: "Armor Proficiency (Light), Armor Proficiency (Medium).",
+        benefit: "When you wear heavy armor, you take no armor check penalty on attack rolls or skill checks. Additionally, you benefit from all of the armor's special equipment bonuses (if any).",
+        normal: "A character who wears heavy armor with which she is not proficient takes a -10 armor check penalty on attack rolls as well as skill checks made using the following skills: Acrobatics, Climb, Endurance, Initiative, Jump, Stealth, and Swim. Additionally, the character gains none of the armor's special equipment bonuses."
+    }, {
+        name: "Armor Proficiency (Light)",
+        description: "You are proficient with light armor and can wear it without impediment.",
+        benefit: "When you wear light armor, you take no armor check penalty on attack rolls or skill checks. Additionally, you benefit from all of the armor's special equipment bonuses (if any).",
+        normal: "A character who wears light armor with which she is not proficient takes a -2 armor check penalty on attack rolls as well as skill checks made using the following skills: Acrobatics, Climb, Endurance, Initiative, Jump, Stealth, and Swim. Additionally, the character gains none of the armor's special equipment bonuses.", //Book says "heavy armor" in the first sentece, corrected to "light"
+        source: "Core Rulebook"
+    }, {
+        name: "Armor Proficiency (Medium)",
+        description: "You are proficient with medium armor and can wear it without impediment.",
+        prerequisites: "Armor Proficiency (Light).",
+        benefit: "When you wear medium armor, you take no armor check penalty on attack rolls or skill checks. Additionally, you benefit from all of the armor's special equipment bonuses (if any).",
+        normal: "A character who wears medium armor with which she is not proficient takes a -5 armor check penalty on attack rolls as well as skill checks made using the following skills: Acrobatics, Climb, Endurance, Initiative, Jump, Stealth, and Swim. Additionally, the character gains none of the armor's special equipment bonuses.",
+        source: "Core Rulebook"
+    }, {
+        name: "Bantha Rush",
+        description: "You can shove your opponents around the battlefield to gain a tactical advantage.",
+        prerequisites: "Strength 13, base attack bonus +1.",
+        benefit: "After making a successful melee attack against an opponent up to one size category larger than you, you can choose to move that opponent 1 square in any direction as a free action. You can't Bantha Rush an opponent that's being grabbed or grappled, and you can't Bantha Rush your opponent into a solid object or another creature's fighting space.",
+        source: "Core Rulebook"
+    }, {
+        name: "Burst Fire",
+        description: "When using a ranged weapon in autofire mode, you can fire a short burst at a single foe.",
+        prerequisites: "Strength 13, Weapon Proficiency (Heavy Weapons), proficient with weapon.",
+        benefit: "When using a ranged weapon with autofire capability in autofire more, you may fire a short burst as a single attack against a single target. You take a -5 penalty on the attack roll but deal +2 dice of damage. For example, a weapon that deals 3d10 points of damage deals 5d10 points of damage instead.\n The effect of this feat does not stack with the extra damage provided by the Deadeye or Rapid Shot feats.",
+        special: "Firing a burst expends five shots and can only be done if the weapon has at least five shots remaining.",
+        normal: "Autofire uses ten shots, targets a 2-square-by-2-square area, and can't be aimed at a specific target. Without this feat, if you attempt an autofire attack at a specific target, it simply counts as a normal attack and all the extra shots are wasted.",
+        source: "Core Rulebook"
+    }, {
+        name: "Careful Shot",
+        description: "You are particularly skilled at aiming your attacks.",
+        prerequisites: "Point Blank Shot, base attack bonus +2.",
+        benefit: "If you aim before making a ranged attack (see Aim), you gain a +1 bonus on your attack roll.",
+        source: "Core Rulebook"
+    }, {
+        name: "Charging Fire",
+        description: "You are able to make ranged attacks while charging.",
+        prerequisites: "Base attack bonus +4.",
+        benefit: "When you charge, you may make a ranged attack instead of a melee attack at the end of your movement. Unlike normal charge, your momentum does not help overcome your target, so you gain no bonus on attack roll. As with a normal charge, you still take a -2 penalty to your Reflex Defense.",
+        normal: "You can make a single melee attack with a +2 bonus on your attack roll at the end of a charge.",
+        source: "Core Rulebooks"
+    }, {
+        name: "Cleave",
+        description: "You can follow through with a powerful melee attack.",
+        prerequisites: "Strength 13, Power Attack.",
+        benefit: "If you deal an opponent enough damage to reduce its hit points it to 0, you get an immediate extra melee attack against another opponent within your reach. You cannot adjust 1 square before making this extra attack. The extra attack is with the same weapon and at the same bonus as the attack that dropped the previous opponent. You cannot use this ability once per round.",
+        source: "Core Rulebook"
+    }, {
+        name: "Combat Reflexes",
+        description: "You can respond quickly and repeatedly to opponents who let their guard down.",
+        benefit: "When opponents leave themselves open, you may make a number of additional attacks of opportunity equal to your Dexterity modifier.\nFor example, a character with a Dexterity of 15 can make a total of three attacks of opportunity in a round: the one attack of opportunity every character is entitled to, plus two more attacks because of his +2 Dexterity bonus. If four stormtroopers move through the character's threatened area, he can make attacks of opportunity against three of the four. You still only make one attack of opportunity on a single opponent.\nWith this feat, you may also make attacks of opportunity while flat-footed.",
+        normal: "A character without the Combat Reflexes feat can make only one attack of opportunity per round and can't make attacks of opportunity while flat-footed. (See Attacks of Opportunity for more information.)",
+        source: "Core Rulebook"
+    }, {
+        name: "Coordinated Attack",
+        description: "You are skilled at coordinating you attacks with your allies.",
+        prerequisites: "Base attack bonus +2.",
+        benefit: "You are automatically successful when using the aid another action to aid an ally's attack or suppress an enemy as long as the target is adjacent to you or within point blank range.",
+        normal: "You must make an attack roll against a Reflex Defense of 10 to gain the benefits of the aid another action.",
+        source: "Core Rulebook"
+    }, {
+        name: "Crush",
+        description: "You can deal damage to a creature that you've grappled.",
+        prerequisites: "Pin, base attack bonus +1.",
+        benefit: "If you successfully pin an opponent with a grapple attack (see the Pin feat), you can immediately deal bludgeoning damage to it equal to your unarmed damage or claw damage, whichever is greater.",
+        source: "Core Rulebook"
+    }, {
+        name: "Cybernetic Surgery",
+        description: "You can perform the surgical procedures necessary to graft cybernetic components onto living flesh.",
+        prerequisites: "Trained in the Treat Injury skill.",
+        benefit: "You can install a cybernetic prosthesis on a living being. The surgical procedures takes 1 hour of uninterrupted work, after which you must make a DC 20 Treat Injury check. If the check succeeds, the prosthesis is installed correctly. If the check fails, the prosthesis is not properly installed; however, you can try again after another uninterrupted hour of surgery.",
+        special: "You can install a cybernetic prosthesis on yourself, but you take a -5 penalty on the Treat Injury skill check. If you have the Surgical Expertise feat, you can install a cybernetic prosthesis in 10 minutes instead of 1 hour.",
+        source: "Core Rulebook"
+    }, {
+        name: "Deadeye",
+        description: "You are skilled at picking off enemies with well-aimed ranged attacks.",
+        prerequisites: "Point Blank Shot, Precise Shot, base attack bonus +4.",
+        benefit: "If you aim before making a ranged attack (see Aim) and the attack hits, increase the damage you deal by an additional weapon die. For example, if you score a hit with a blaster pistol using the Deadeye feat, the blaster shot deals 4d6 points of damage (instead of the normal 3d6 points.)\nThe effects of this feat do not stack with the extra damage provided by the Burst Fire or Rapid Shot feat.",
+        source: "Core Rulebook"
+    }, {
+        name: "Dodge",
+        description: "You are adept at dodging blows.",
+        prerequisites: "Dexterity 13.",
+        benefit: "During your turn, you designate an opponent and receive a +1 dodge bonus to your Reflex Defense against attacks from that opponent. You can select a new opponent on any action.\nA situation that makes you lose you Dexterity bonus to Reflex Defense (if any) also makes you lose dodge bonuses. Also, dodge bonuses stack with each other, unlike most other types of bonuses.",
+        source: "Core Rulebook"
+    }, {
+        name: "Double Attack",
+        description: "You can make an additional attack during a round of combat.",
+        prerequisites: "Base attack bonus +6, proficient with chosen weapon.",
+        benefit: "Choose a single exotic weapon or one of the following weapon groups: advanced melee weapons, heavy weapons, lightsabers, pistols, rifles, simple weapons. When you use the full attack action, you may make one additional attack when wielding such a weapon. However, you take a -5 penalty on all attack rolls until your next turn because you're trading precision for speed.",
+        normal: "Making a single attack is a standard action.",
+        special: "You may select this feat multiple times. Each time you select this feat, it applies to a different exotic weapon or weapon group."
+        source: "Core Rulebook"
+    }, {
+        name: "Dreadful Rage",
+        description: "You deal horrendous damage while raging.",
+        prerequisites: "Rage species trait, base attack bonus +1",
+        benefit: "While raging, your rage bonus on melee attack rolls and melee damage rolls increase to +5.",
+        normal: "A character with the rage species trait gains a +2 rage bonus on melee attack rolls and melee damage rolls while raging.",
+        source: "Core Rulebook"
+    }, {
+        name: "Dual Weapon Mastery I",
+        description: "You are adept at fighting with two weapons and double weapons.",
+        prerequisites: "Dexterity 13, base attack bonus +1",
+        benefit: "When you attack with two weapons or with both ends of a double weapon as a part of a full attack action, you take a -5 penalty (instead of a -10 penalty) on all attack rolls until the start of your next turn. YOu only gain this reduced penalty if you are wielding a weapon with which you are proficient.",
+        normal: "If you  use a full attack action to make more than one attack on your turn (see Full Attack), you take a -10 penalty on all attack rolls for the round.",
+        source: "Core Rulebook"
+    }, {
+        name: "Dual Weapon Mastery II",
+        description: "You are a master at fighting with two weapons and double weapons.",
+        prerequisites: "Dexterity 15, base attack bonus +6, Dual Weapon Mastery I.",
+        benefit: "When you attack with two weapons or both ends of a double weapon as a part of a full attack action, you take a -2 penalty (instead of a -10 penalty) on all attack rolls until the start of your next turn. You only gain this reduced penalty if you are wielding a weapon with which you are proficient.",
+        normal: "If you use a full attack action to make more than one attack on your turn (see Full Attack), you take a -10 penalty on all attack rolls for the round.",
+        source: "Core Rulebook"
+    }, {
+        name: "Dual Weapon Mastery III",
+        description: "You can wield two weapons or a double weapon without penalty.",
+        prerequisites: "Dexterity 17, base attack bonus +11, Dual Weapon Mastery I, Dual Weapon Mastery II.",
+        benefit: "When you wield two weapons or attack with both ends of a double weapon as a part of a full attack action, you take no penalty on your attack rolls. You only gain this benefit if you are wielding a weapon with which you are proficient.",
+        normal: "If you use a full attack action to make more than one attack on your turn (see Full Attack), you take a -10 penalty on all attack rolls for the round.",
+        source: "Core Rulebook"
+    }, {
+        name: "Exotic Weapon Proficiency",
+        description: "Choose an exotic weapon, such as bowcaster or atlatl (see Exotic Weapons). You understand how to use that type of exotic weapon in combat.",
+        prerequisites: "Base attack bonus +1.",
+        benefit: "You make attack rolls with the weapon normally.",
+        normal: "A character who uses a weapon without being proficient with it takes a -5 penalty on attack rolls.",
+        special: "You can gain this feat multiple times. Each time you take the feat, it applies to a different weapon.",
+        source: "Core Rulebook"
+    }, {
+        name: "Extra Rage",
+        description: "You can fly into a rage more often.",
+        prerequisites: "Rage species trait.",
+        benefit: "You can rage one additional time per day.",
+        special: "You can take this feat multiple times; each time you take the feat, you can rage one additional time per day.",
+        source: "Core Rulebook"
+    }, {
+        name: "Extra Second Wind",
+        description: "You tend to come back from the edge of oblivion more often.",
+        prerequisites: "Trained in the Endurance skill.",
+        benefit: "You can catch a second wind one additional time per day, but you can still only catch a second wind once per encounter (see Second Wind).",
+        normal: "A hero can catch his or her second wind once per day.",
+        special: "A nonheroic character that takes this feat for the first time can catch a second wind once per day.\nYou can take this feat multiple times; each time you take this feat, you can catch a second wind one additional time per day.",
+        source: "Core Rulebook"
+    }, {
+        name: "Far Shot",
+        description: "You are better at shooting distant foes.",
+        prerequisites: "Point Blank Shot",
+        benefit: "When you use a ranged weapon against targets at short, medium, or long range, the range category is considered one less. In other words, you take no penalty on ranged attack rolls against targets at short range, a -2 penalty on ranged attack rolls made against targets at medium range, and a -5 penalty on a ranged attack roll made against targets at long range.",
+        notes: "It states 'use a ranged weapon against targets at short, medium, or long range, the range category is considered one less.' It does not state that it must be fired. Could you gain the benefit of this feat when throwing a ranged weapon at a target?"
+        normal: "When making a ranged attack roll, a character takes a -2 penalty against targets at short range, a -5 penalty against targets at medium range, and a -10 penalty against targets at long range.",
+        source: "Core Rulebook"
+    }, {
+        name: "Force Boon",
+        description: "You are able to draw upon the Force more often than less skilled users.",
+        prerequisites: "Force Sensitivity",
+        benefit: "You gain three additional Force Points at each level.",
+        source: "Core Rulebook"
+    }, {
+        name: "Force Sensitivity",
+        description: "You are Force-sensitive, allowing you to call on the Force and learn to draw on its power.",
+        prerequisites: "Cannot be a droid.",
+        benefit: "You can make Use the Force checks, and Use the Force is considered a class skill for you. In addition, whenever you gain a new talent, you have the option of selecting a Force talent instead. You must meet the prerequisites of the Force talent to select it (see Force Talents).",
+        normal: "You can't make Use the Force checks or select Force talents unless you have the Force Sensitivity feat.",
+        source: "Core Rulebook"
+    }, {
+        name: "Force Training",
+        description: "You learn one or more Force powers (see Force Powers).",
+        prerequisites: "Force Sensitivity, trained in the Use the Force skill.",
+        benefit: "You add to your Force power suite a number of Force powers equal to 1 + your Wisdom modifier (minimum 1). You can add the same power more than once.",
+        special: "You can take this feat more than once. Each time you take this feat, you add to your Force suite a number of new Force powers equal to your Wisdom modifier.\nIf your Wisdom modifier permanently increases, you immediately gain a number of Force powers equal to the number of Force Training feats you have taken.",
+        source: "Core Rulebook"
+    }, {
+        name: "Great Cleave",
+        description: "You can wield a melee weapon with such power that you can strike multiple times when you drop your opponents.",
+        prerequisites: "Strength 13, Power Attack, Cleave, base attack bonus +4.",
+        benefit: "As the Cleave feat, except that you have no limit to the number of times you can use it per round.",
+        source: "Core Rulebook"
+    }, {
+        name: "Improved Charge",
+        description: "You can charge around obstacles.",
+        prerequisites: "Dexterity 13, Dodge, Mobility.",
+        benefit: "You can make a charge without having to move in a straight line, and you can alter your direction when making a charge to avoid obstacles. All other charge rules apply.",
+        normal: "A character must charge in an unobstructed straight line.",
+        source: "Core Rulebook"
+    }, {
+        name: "Improved Defense",
+        description: "You are skilled at fending off attacks of many forms.",
+        benefit: "You gain a +1 bonus to your Reflex Defense, Fortitude Defense, and Will Defense.",
+        source: "Core Rulebook"
+    }, {
+        name: "Improved Disarm",
+        description: "You are skilled at disarming opponents in melee combat.",
+        prerequisites: "Intelligence 13, Melee Defense.",
+        benefit: "You gain a +5 bonus on any melee attack roll made to disarm an opponent. In addition, if you fail to disarm your opponent, he doesn't get to make a free attack against you.",
+        normal: "See the normal disarm rules.",
+        source: "Core Rulebook"
+    }, {
+        name: "Improved Damage Threshold",
+        description: "You are harder to take down in a fight.",
+        benefit: "You increase your damage threshold by 5 (see Damage Threshold).",
+        normal: "A creature without this feat has a damage threshold equal to its Fortitude Defense plus its size modifier (+5 for Large, +10 for Huge, +20 for Gargantuan, or +50 for Colossal).",
+        special: "You can take this feat more than once. Its effects stack. Each time you take this feat, increase your damage threshold by 5.",
+        source: "Core Rulebook"
+    }, {
+        name: "Linguist",
+        description: "You pick up languages quickly and easily.",
+        prerequisites: "Intelligence 13.",
+        benefit: "You gain a number of bonus languages equal to 1 plus your Intelligence bonus (minimum of 1). See Common Languages.",
+        special: "You can take this feat more than once. Each time you take this feat, you gain a number of additional languages equal to 1 plus your Intelligence bonus (minimum 1).",
+        source: "Core Rulebook"
+    }, {
+        name: "Martial Arts I",
+        description: "You are adept at fighting unarmed.",
+        benefit: "Damage dealt by you unarmed attacks increases by one die step: 1d3 becomes 1d4, 1d4 becomes 1d6, and 1d6 becomes 1d8. In addition, you gain a +1 dodge bonus to your Reflex Defense.",
+        normal: "The amount of damage you deal with a successful unarmed attack is based on your size: Small, 1d3; Medium, 1d4; Large, 1d6.",
+        special: "A situation that makes you lose your Dexterity bonus to Reflex Defense (if any) also makes you lose dodge bonuses. Also, dodge bonuses stack with each other, unlike most other types of bonuses.",
+        source: "Core Rulebook"
+    }, {
+        name: "Martial Arts II",
+        description: "You are a master at fighting unarmed.",
+        prerequisites: "Martial Arts I, base attack bonus +3.",
+        benefit: "Damage dealt by your unarmed attacks increases by one die step: 1d4 becomes 1d6, 1d6 becomes 1d8, 1d8 becomes 1d10. In addition, you gain a +1 dodge bonus to your Reflex Defense (which stacks with the dodge bonus granted by the Martial Arts I feat).",
+        normal: "The amount of damage you deal with a successful unarmed attack is based on your size: Small, 1d3; Medium, 1d4; Large, 1d6.",
+        special: "A situation that makes you lose you Dexterity bonus to Reflex Defense (if any) also makes you lose dodge bonuses. Also, dodge bonuses stack with each other, unlike most other types of bonuses.",
+        source: "Core Rulebook"
+    }, {
+        name: "Martial Arts III",
+        description: "Your martial arts prowess is second to none.",
+        prerequisites: "Martial Arts I, Martial Arts II, base attack bonus +6.",
+        benefit: "Damage dealt by your unarmed attacks increase by one die step: 1d6 becomes 1d8, 1d8 becomes 1d10, and 1d10 becomes 1d12. In addition, you gain a +1 dodge bonus to your Reflex Defense (which stacks with the dodge bonus granted by the Martial Arts I and Martial Arts II feats).",
+        normal: "The amount of damage you deal with a successful unarmed attack is based on your size: Small, 1d3; Medium, 1d4; Large, 1d6.",
+        special: "A situation that makes you lose your Dexterity bonus to Reflex Defense (if any) also makes you lose dodge bonuses. Also, dodge bonuses stack with each other, unlike most other types of bonuses.",
+        source: "Core Rulebook"
+    }, {
+        name: "Melee Defense",
+        description: "You are trained at using your combat ability for defense as well as offense.",
+        prerequisites: "Intelligence 13.",
+        benefit: "When you use a standard action to make a melee attack, you can take a penalty of up to -5 on your attack roll and add the same number (up to +5) as a dodge bonus to your Reflex Defense. This number may not exceed your base attack bonus. The changes to attack rolls and Reflex Defense last until the start of your next turn.",
+        normal: "A character without the Melee Defense feat can fight defensively while using the attack action to take a -5 penalty on his attack roll and gain a +2 dodge bonus to his Reflex Defense.",
+        source: "Core Rulebook"
+    }, {
+        name: "Mighty Swing",
+        description: "You are capable of delivering jarring melee attacks.",
+        prerequisites: "Strength 13.",
+        benefit: "You can spend two swift actions in the same round to deal +1 die of damage on your next melee attack in the same round.\nThe effects of this feat do not stack with the extra damage provided by the Rapid Strike feat.",
+        source: "Core Rulebook"
+    }, {
+        name: "Mobility",
+        description: "You are skilled at moving past opponents and avoiding opportunistic attacks.",
+        prerequisites: "Dexterity 13, Dodge.",
+        benefit: "You gain a +5 dodge bonus to reflex Defense against attacks of opportunity caused when you move out of or into a threatened area (see Attacks of Opportunity).\nA situation that makes you lose your Dexterity bonus to Reflex Defense (if any) also makes you lose dodge bonuses. Dodge bonuses stack with each other, unlike most types of bonuses.",
+        source: "Core Rulebook"
+    }, {
+        name: "Pin",
+        description: "You are skilled at immobilizing grappled foes.",
+        prerequisites: "Base attack bonus +1.",
+        benefit: "If you succeed on a grappling attack and you opponent fails the opposed grapple check, you opponent is automatically pinned until the start of your next turn. A pinned creature can't move or take any actions while pinned, and it loses its Dexterity bonus (if any) to Reflex Defense.",
+        special: "You cannot use the Pin and Trip feats during the same round. You can use the Pin and Crush feats in the same round, however.",
+        source: "Core Rulebook"
+    }, {
+        name: "Point Blank Shot",
+        description: "You are skilled at making well-placed shots with ranged weapons at point blank range.",
+        benefit: "You get a +1 bonus on attack and damage rolls with ranged weapons against opponents within point blank range.",
+        source: "Core Rulebook"
+    }, {
+        name: "Power Attack",
+        description: "You can make exceptionally powerful melee attacks.",
+        prerequisites: "Strength 13.",
+        benefit: "On your action, before making an attack roll, you may choose to subtract a number from all melee attack rolls and add the same number to all melee damage rolls. This number may not exceed your base attack bonus. This penalty on attacks and bonus on damage applies until the start of your next turn.",
+        special: "If you attack with a two-handed weapon, or with a one-handed weapon wielded in two hands, instead add twice the number subtracted from your attack rolls. You can't add the bonus from Power Attack to the damage dealt against an object or vehicle.",
+        source: "Core Rulebook"
+    }, {
+        name: "Powerful Charge",
+        description: "You can charge with extra force.",
+        prerequisites: "Medium or larger size, base attack bonus +1.",
+        benefit: "When you charge, you gain an additional +2 bonus to your melee attack roll. If your melee attack hits, you deal additional damage equal to one-half your level.",
+        source: "Core Rulebook"
+    }, {
+        name: "Precise Shot",
+        description: "You are skilled at timing your ranged attacks so that you don't hit your allies by mistake.",
+        prerequisites: "Point Blank Shot",
+        benefit: "You can shoot or throw a ranged weapon at an opponent engaged in melee combat with one or more of your allies without taking the standard -5 penalty (see Shooting or Throwing into a Melee).",
+        source: "Core Rulebook"
+    }, {
+        name: "Quick Draw",
+        description: "You can draw and holster weapons with startling quickness.",
+        prerequisites: "Base attack bonus +1.",
+        benefit: "You can draw or holster a weapon as a swift action instead of as a move action.",
+        source: "Core Rulebook"
+    }, {
+        name: "Rapid Shot",
+        description: "You can make two quick shots with a ranged weapon as a single attack.",
+        prerequisites: "Strength 13, base attack bonus +1, proficient with weapon.",
+        benefit: "When using a ranged weapon, you may fire two shots as a single attack against a single target. You take a -2 penalty on your attack roll, bu you deal +1 die of damage with a successful attack.",
+        special: "Using this feat fires two shots and can only be done if the weapon has sufficient ammunition remaining. The effects of this feat do not stack with the extra damage provided by the Burst Fire feat or Deadeye feat.",
+        source: "Core Rulebook"
+    }, {
+        name: "Rapid Strike",
+        description: "You can make two quick strikes with a melee weapon as a single attack.",
+        prerequisites: "Dexterity 13, base attack bonus +1, proficient with weapon.",
+        benefit: "While using a melee weapon, you may make two strikes as a single attack against a single target. You take a -2 penalty on your attack roll, but you deal +1 die of damage with a successful attack.\nThe effects of this feat do not stack with the extra damage provided by the Mighty Swing feat.",
+        source: "Core Rulebook"
+    }, {
+        name: "Running Attack",
+        description: "You can more as you attack.",
+        prerequisites: "Dexterity 13.",
+        benefit: "When making an attack with a melee or ranged weapon, you can move both before and after the attack, provided that your total distance moved is not greater than your speed.",
+        source: "Core Rulebook"
+    }, {
+        name: "Shake It Off",
+        description: "You have learned to shake off debilitating conditions.",
+        prerequisites: "Constitution 13, trained in the Endurance skill.",
+        benefit: "You can spend two swift actions instead of three swift actions to move +1 step along the condition track (see Conditions).",
+        normal: "It takes three swift actions to move +1 step along the condition track.",
+        source: "Core Rulebook"
+    }, {
+        name: "Skill Focus",
+        description: "One of your skills is particularly well honed.",
+        benefit: "You gain a +5 competence bonus on skill checks made with one trained skill of your choice.",
+        special: "This feat may be selected multiple times. It's effects do not stack. Each time you take this feat, it applies to a different trained skill.",
+        source: "Core Rulebook"
+    }, {
+        name: "Skill Training",
+        description: "You are considered trained in a new skill.",
+        benefit: "Chose one untrained skill from your list of class skills. You become trained in that skill.",
+        special: "This feat may be selected multiple times. Each time you take this feat, it applies to a different class skill.",
+        source: "Core Rulebook"
+    }, {
+        name: "Sniper",
+        description: "You are particularly adept at hitting the right target in a crowd.",
+        prerequisites: "Point Blank Shot, Precise Shot, base attack bonus +4.",
+        benefit: "You always ignore soft cover (that is, cover provided by a character, creature, or droid) when you make a ranged attack.",
+        normal: "You can only ignore cover if you aim before making a ranged attack.",
+        source: "Core Rulebook"
+    }, {
+        name: "Strong in the Force",
+        description: "You have a particularly strong connection to the Force.",
+        benefit: "When you spend a Force Point to adjust the result of an attack roll, skill check, or ability check, you roll d8s rather than d6s.",
+        source: "Core Rulebook"
+    }, {
+        name: "Surgical Expertise",
+        description: "You can perform skillful surgical procedures quickly.",
+        prerequisites: "Trained in the Treat Injury skill.",
+        benefit: "You can perform surgery in 10 minutes.",
+        normal: "Performing surgery typically takes 1 hour (see Treat Injury skill).",
+        source: "Core Rulebook"
+    }, {
+        name: "Throw",
+        description: "You can throw a creature that you've grappled.",
+        prerequisites: "Trip, base attack bonus +1.",
+        benefit: "If you successfully trip an opponent with a grapple attack, the opponent falls prone in any unoccupied space you desire up to 1 square beyond your reach and takes bludgeoning damage equal to your unarmed attack damage. A thrown opponent is no longer considered grappled.",
+        source: "Core Rulebook"
+    }, {
+        name: "Toughness",
+        description: "You are tougher than normal.",
+        benefit: "You gain +1 hit point per character level.",
+        source: "Core Rulebook"
+    }, {
+        name: "Trip",
+        description: "You are skilled at tripping foes.",
+        prerequisites: "Base attack bonus +1.",
+        benefit: "If you succeed on a grappling attack and your opponent fails the opposed grapple check, it falls prone in its space and is no longer considered grappled.\nA prone opponent takes a -5 penalty on melee attack rolls. Melee attacks made against a prone target gain a +5 bonus, while ranged attacks made against a prone target take a -5 penalty.",
+        special: "You cannot use the Pin and Trip feats during the same round.",
+        source: "Core Rulebook"
     }
-    
 ]
