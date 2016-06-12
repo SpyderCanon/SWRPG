@@ -10,6 +10,17 @@ Feat
         heading
         body
 ---------TEMPLATE----------
+BASIC:
+{
+    name: ,
+    description: ,
+    prerequisites: ,
+    benefit: ,
+    special: ,
+    normal: ,
+    source:
+}
+FULL:
 {name : ,
  description : ,
  prerequisites : ,
@@ -26,10 +37,49 @@ Feat
 */
 
 var FeatsJSON = [
-    {name : "Acrobatic Strike",
-     description : "You desxterous meneuvers and skilled acrobatics allow you to slip past a foe's defenses and deliver an accurate strike against him.",
-     prerequisites : "Trained in Acrobatics skill.",
-     benefit : "If you succeed in tumbling to avoid an attack of opportunity (See Acrobatics skill), you gain a +5 bonus on the next attack that you make against that foe as long as the attack occurs before the end of your current turn."
+    {
+        name: "Acrobatic Strike",
+        description: "You dexterous manuevers and skilled acrobatics allow you to slip past a foe's defenses and deliver an accurate strike against him.",
+        prerequisites: "Trained in Acrobatics skill.",
+        benefit: "If you succeed in tumbling to avoid an attack of opportunity (See Acrobatics skill), you gain a +5 bonus on the next attack that you make against that foe as long as the attack occurs before the end of your current turn."
+    }, {
+        name: "Armor Proficiency (Heavy)",
+        description: "You are proficient with heavy armor and can wear it without impediment.",
+        prerequisites: "Armor Proficiency (Light), Armor Proficiency (Medium).",
+        benefit: "When you wear heavy armor, you take no armor check penalty on attack rolls or skill checks. Additionally, you benefit from all of the armor's special equipment bonuses (if any).",
+        normal: "A character who wears heavy armor with which she is not proficient takes a -10 armor check penalty on attack rolls as well as skill checks made using the following skills: Acrobatics, Climb, Endurance, Initiative, Jump, Stealth, and Swim. Additionally, the character gains none of the armor's special equipment bonuses."
+    }, {
+        name: "Armor Proficiency (Light)",
+        description: "You are proficient with light armor and can wear it without impediment.",
+        benefit: "When you wear light armor, you take no armor check penalty on attack rolls or skill checks. Additionally, you benefit from all of the armor's special equipment bonuses (if any).",
+        normal: "A character who wears light armor with which she is not proficient takes a -2 armor check penalty on attack rolls as well as skill checks made using the following skills: Acrobatics, Climb, Endurance, Initiative, Jump, Stealth, and Swim. Additionally, the character gains none of the armor's special equipment bonuses.", //Book says "heavy armor" in the first sentece, corrected to "light"
+        source: "Core Rulebook"
+    }, {
+        name: "Armor Proficiency (Medium)",
+        description: "You are proficient with medium armor and can wear it without impediment.",
+        prerequisites: "Armor Proficiency (Light).",
+        benefit: "When you wear medium armor, you take no armor check penalty on attack rolls or skill checks. Additionally, you benefit from all of the armor's special equipment bonuses (if any).",
+        normal: "A character who wears medium armor with which she is not proficient takes a -5 armor check penalty on attack rolls as well as skill checks made using the following skills: Acrobatics, Climb, Endurance, Initiative, Jump, Stealth, and Swim. Additionally, the character gains none of the armor's special equipment bonuses.",
+        source: "Core Rulebook"
+    }, {
+        name: "Bantha Rush",
+        description: "You can shove your opponents around the battlefield to gain a tactical advantage.",
+        prerequisites: "Strength 13, base attack bonus +1.",
+        benefit: "After making a successful melee attack against an opponent up to one size category larger than you, you can choose to move that opponent 1 square in any direction as a free action. You can't Bantha Rush an opponent that's being grabbed or grappled, and you can't Bantha Rush your opponent into a solid object or another creature's fighting space.",
+        source: "Core Rulebook"
+    }, {
+        name: "Burst Fire",
+        description: "When using a ranged weapon in autofire mode, you can fire a short burst at a single foe.",
+        prerequisites: "Strength 13, Weapon Proficiency (Heavy Weapons), proficient with weapon.",
+        benefit: "When using a ranged weapon with autofire capability in autofire more, you may fire a short burst as a single attack against a single target. You take a -5 penalty on the attack roll but deal +2 dice of damage. For example, a weapon that deals 3d10 points of damage deals 5d10 points of damage instead.\n The effect of this feat does not stack with the extra damage provided by the Deadeye or Rapid Shot feats.",
+        special: "Firing a burst expends five shots and can only be done if the weapon has at least five shots remaining.",
+        normal: "Autofire uses ten shots, targets a 2-square-by-2-square area, and can't be aimed at a specific target. Without this feat, if you attempt an autofire attack at a specific target, it simply counts as a normal attack and all the extra shots are wasted.",
+        source: "Core Rulebook"
+    }, {
+        name: "Careful Shot",
+        description: "You are particularly skilled at aiming your attacks.",
+        prerequisites: "Point Blank Shot, base attack bonus +2.",
+        benefit: "If you aim before making a ranged attack (see Aim), you gain a +1 bonus on your attack roll.",
+        source: "Core Rulebook"
     }
-    
 ]
