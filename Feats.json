@@ -81,5 +81,107 @@ var FeatsJSON = [
         prerequisites: "Point Blank Shot, base attack bonus +2.",
         benefit: "If you aim before making a ranged attack (see Aim), you gain a +1 bonus on your attack roll.",
         source: "Core Rulebook"
+    }, {
+        name: "Charging Fire",
+        description: "You are able to make ranged attacks while charging.",
+        prerequisites: "Base attack bonus +4.",
+        benefit: "When you charge, you may make a ranged attack instead of a melee attack at the end of your movement. Unlike normal charge, your momentum does not help overcome your target, so you gain no bonus on attack roll. As with a normal charge, you still take a -2 penalty to your Reflex Defense.",
+        normal: "You can make a single melee attack with a +2 bonus on your attack roll at the end of a charge.",
+        source: "Core Rulebooks"
+    }, {
+        name: "Cleave",
+        description: "You can follow through with a powerful melee attack.",
+        prerequisites: "Strength 13, Power Attack.",
+        benefit: "If you deal an opponent enough damage to reduce its hit points it to 0, you get an immediate extra melee attack against another opponent within your reach. You cannot adjust 1 square before making this extra attack. The extra attack is with the same weapon and at the same bonus as the attack that dropped the previous opponent. You cannot use this ability once per round.",
+        source: "Core Rulebook"
+    }, {
+        name: "Combat Reflexes",
+        description: "You can respond quickly and repeatedly to opponents who let their guard down.",
+        benefit: "When opponents leave themselves open, you may make a number of additional attacks of opportunity equal to your Dexterity modifier.\nFor example, a character with a Dexterity of 15 can make a total of three attacks of opportunity in a round: the one attack of opportunity every character is entitled to, plus two more attacks because of his +2 Dexterity bonus. If four stormtroopers move through the character's threatened area, he can make attacks of opportunity against three of the four. You still only make one attack of opportunity on a single opponent.\nWith this feat, you may also make attacks of opportunity while flat-footed.",
+        normal: "A character without the Combat Reflexes feat can make only one attack of opportunity per round and can't make attacks of opportunity while flat-footed. (See Attacks of Opportunity for more information.)",
+        source: "Core Rulebook"
+    }, {
+        name: "Coordinated Attack",
+        description: "You are skilled at coordinating you attacks with your allies.",
+        prerequisites: "Base attack bonus +2.",
+        benefit: "You are automatically successful when using the aid another action to aid an ally's attack or suppress an enemy as long as the target is adjacent to you or within point blank range.",
+        normal: "You must make an attack roll against a Reflex Defense of 10 to gain the benefits of the aid another action.",
+        source: "Core Rulebook"
+    }, {
+        name: "Crush",
+        description: "You can deal damage to a creature that you've grappled.",
+        prerequisites: "Pin, base attack bonus +1.",
+        benefit: "If you successfully pin an opponent with a grapple attack (see the Pin feat), you can immediately deal bludgeoning damage to it equal to your unarmed damage or claw damage, whichever is greater.",
+        source: "Core Rulebook"
+    }, {
+        name: "Cybernetic Surgery",
+        description: "You can perform the surgical procedures necessary to graft cybernetic components onto living flesh.",
+        prerequisites: "Trained in the Treat Injury skill.",
+        benefit: "You can install a cybernetic prosthesis on a living being. The surgical procedures takes 1 hour of uninterrupted work, after which you must make a DC 20 Treat Injury check. If the check succeeds, the prosthesis is installed correctly. If the check fails, the prosthesis is not properly installed; however, you can try again after another uninterrupted hour of surgery.",
+        special: "You can install a cybernetic prosthesis on yourself, but you take a -5 penalty on the Treat Injury skill check. If you have the Surgical Expertise feat, you can install a cybernetic prosthesis in 10 minutes instead of 1 hour.",
+        source: "Core Rulebook"
+    }, {
+        name: "Deadeye",
+        description: "You are skilled at picking off enemies with well-aimed ranged attacks.",
+        prerequisites: "Point Blank Shot, Precise Shot, base attack bonus +4.",
+        benefit: "If you aim before making a ranged attack (see Aim) and the attack hits, increase the damage you deal by an additional weapon die. For example, if you score a hit with a blaster pistol using the Deadeye feat, the blaster shot deals 4d6 points of damage (instead of the normal 3d6 points.)\nThe effects of this feat do not stack with the extra damage provided by the Burst Fire or Rapid Shot feat.",
+        source: "Core Rulebook"
+    }, {
+        name: "Dodge",
+        description: "You are adept at dodging blows.",
+        prerequisites: "Dexterity 13.",
+        benefit: "During your turn, you designate an opponent and receive a +1 dodge bonus to your Reflex Defense against attacks from that opponent. You can select a new opponent on any action.\nA situation that makes you lose you Dexterity bonus to Reflex Defense (if any) also makes you lose dodge bonuses. Also, dodge bonuses stack with each other, unlike most other types of bonuses.",
+        source: "Core Rulebook"
+    }, {
+        name: "Double Attack",
+        description: "You can make an additional attack during a round of combat.",
+        prerequisites: "Base attack bonus +6, proficient with chosen weapon.",
+        benefit: "Choose a single exotic weapon or one of the following weapon groups: advanced melee weapons, heavy weapons, lightsabers, pistols, rifles, simple weapons. When you use the full attack action, you may make one additional attack when wielding such a weapon. However, you take a -5 penalty on all attack rolls until your next turn because you're trading precision for speed.",
+        normal: "Making a single attack is a standard action.",
+        special: "You may select this feat multiple times. Each time you select this feat, it applies to a different exotic weapon or weapon group."
+        source: "Core Rulebook"
+    }, {
+        name: "Dreadful Rage",
+        description: "You deal horrendous damage while raging.",
+        prerequisites: "Rage species trait, base attack bonus +1",
+        benefit: "While raging, your rage bonus on melee attack rolls and melee damage rolls increase to +5.",
+        normal: "A character with the rage species trait gains a +2 rage bonus on melee attack rolls and melee damage rolls while raging.",
+        source: "Core Rulebook"
+    }, {
+        name: "Dual Weapon Mastery I",
+        description: "You are adept at fighting with two weapons and double weapons.",
+        prerequisites: "Dexterity 13, base attack bonus +1",
+        benefit: "When you attack with two weapons or with both ends of a double weapon as a part of a full attack action, you take a -5 penalty (instead of a -10 penalty) on all attack rolls until the start of your next turn. YOu only gain this reduced penalty if you are wielding a weapon with which you are proficient.",
+        normal: "If you  use a full attack action to make more than one attack on your turn (see Full Attack), you take a -10 penalty on all attack rolls for the round.",
+        source: "Core Rulebook"
+    }, {
+        name: "Dual Weapon Mastery II",
+        description: "You are a master at fighting with two weapons and double weapons.",
+        prerequisites: "Dexterity 15, base attack bonus +6, Dual Weapon Mastery I.",
+        benefit: "When you attack with two weapons or both ends of a double weapon as a part of a full attack action, you take a -2 penalty (instead of a -10 penalty) on all attack rolls until the start of your next turn. You only gain this reduced penalty if you are wielding a weapon with which you are proficient.",
+        normal: "If you use a full attack action to make more than one attack on your turn (see Full Attack), you take a -10 penalty on all attack rolls for the round.",
+        source: "Core Rulebook"
+    }, {
+        name: "Dual Weapon Mastery III",
+        description: "You can wield two weapons or a double weapon without penalty.",
+        prerequisites: "Dexterity 17, base attack bonus +11, Dual Weapon Mastery I, Dual Weapon Mastery II.",
+        benefit: "When you wield two weapons or attack with both ends of a double weapon as a part of a full attack action, you take no penalty on your attack rolls. You only gain this benefit if you are wielding a weapon with which you are proficient.",
+        normal: "If you use a full attack action to make more than one attack on your turn (see Full Attack), you take a -10 penalty on all attack rolls for the round.",
+        source: "Core Rulebook"
+    }, {
+        name: "Exotic Weapon Proficiency",
+        description: "Choose an exotic weapon, such as bowcaster or atlatl (see Exotic Weapons). You understand how to use that type of exotic weapon in combat.",
+        prerequisites: "Base attack bonus +1.",
+        benefit: "You make attack rolls with the weapon normally.",
+        normal: "A character who uses a weapon without being proficient with it takes a -5 penalty on attack rolls.",
+        special: "You can gain this feat multiple times. Each time you take the feat, it applies to a different weapon.",
+        source: "Core Rulebook"
+    }, {
+        name: "Extra Rage",
+        description: "You can fly into a rage more often.",
+        prerequisites: "Rage species trait.",
+        benefit: "You can rage one additional time per day.",
+        special: "You can take this feat multiple times; each time you take the feat, you can rage one additional time per day.",
+        source: "Core Rulebook"
     }
 ]
