@@ -412,5 +412,53 @@ var FeatsJSON = [
         benefit: "If you succeed on a grappling attack and your opponent fails the opposed grapple check, it falls prone in its space and is no longer considered grappled.\nA prone opponent takes a -5 penalty on melee attack rolls. Melee attacks made against a prone target gain a +5 bonus, while ranged attacks made against a prone target take a -5 penalty.",
         special: "You cannot use the Pin and Trip feats during the same round.",
         source: "Core Rulebook"
+    }, {
+        name: "Triple Attack",
+        description: "You can make ad additional attack during a round of combat.",
+        prerequisites: "Basic attack bonus +11, Doubel Attack (chosen weapon), proficient with chosen weapon.",
+        benefit: "Choose a single exotic weapon or one of the following weapon groups: advanced melee weapons, heavy weapons, lightsabers, pistols, rifles, simple weapons. When you use the full attack action, you may make on additional attack when wielding such a weapon. However, you take a -5 penalty on all attack rolls until your next turn because you're trading precision for speed. The extra attack and penalty stack with those of Double Attack.",
+        normal: "Making a single attack is a standard action.",
+        special: "You may select this feat multiple times. Each time you select this feat, it applies to a differnet exotic weapon or weapon group.",
+        source: "Core Rulebook"
+    }, {
+        name: "Triple Crit",
+        description: "Choose one type of weapon, sucha s a blaster pistol, vibrodagger, or lightsaber. You deal more damage on critical hit with that weapon.",
+        prerequisites: "Proficient with weapon, base attack bonus +8.",
+        benefit: "When you score a critical hit with the selected weapon, you deal triple damage. You may select \"unarmed attack\" as a weapon for purposes of this feat.",
+        normal: "A critical hit normally deals double damage to the target.",
+        special: "You can gain this feat multiple times. The effects do not stack. Each time you take this feat, it applies to a different weapon.",
+        source: "Core Rulebook"
+    }, {
+        name: "Vehicular Combat",
+        description: "You can avoid attacks made against your vehicle.",
+        prerequisites: "Trained in the Pilot Skill.",
+        benefit: "Once per round (as a reaction), when you are piloting a vehicle or starship, you may negate a weapon hit by making a successful Pilot check. The DC of the skill check is  equal to the result of the attack roll you wish to negate.\nIn addition, while you are piloting a vehicle, you are considered proficient with pilot-operated vehicle weapons. (The vehicle descriptions in Chapter 10 indicate which weapons are operated by the pilot.)",
+        source: "Core Rulebook"
+    }, {
+        name: "Weapon Finesse",
+        description: "You are especially skilled at using weapons one that can benefit as much from Dexterity as from Strength.",
+        prerequisites: "Base attack bonus +1.",
+        benefit: "When using a ligh melee weapon or lightsabeer, you may use your Dexterity modifier instead of your Strength modifier on attack rolls.",
+        source: "Core Rulebook"
+    }, {
+        name: "Weapon Focus",
+        description: "Choose a single exotic weapon or weapon group. You are especially good at using these wepons. You can choose unarmed strike or grapple for your weapon for the purpose of this feat.",
+        prerequisites: "Proficient with the selected exotic weapon or weapon group.",
+        benefit: "You gain a +1 bonus on all attack rolls you make using the selected exotic weapon or weapon group.",
+        special: "You can gain this feat multiple times. Its effects do not stack. Each time you take the feat, it applies to a new exotic weapon or weapon group.",
+        source: "Core Rulebook"
+    }, {
+        name: "Weapon Proficiency",
+        description: "You are proficient with a particular kid of weaponry.",
+        benefit: "Choose one of the following weapon groups: advanced melee weapons, heavy weapons (which includes vehicular weapons and starship weapons), lightsabers, pistols, rifles, and simple weapons. You are proficient with all weapons of the selected group.",
+        normal: "If you wield a weapon with which you are not proficient, you take a -5 penalty to your attack rolls.",
+        special: "You can gain this feat multiple times. Each time you take the feat, it applies to a different weapon group. You cannot take exotic weapons as a weapon group; instead, you must select the Exotic Weapon Proficiency feat to gain proficiency with a specific exotic weapon (such as the bowcaster or flamethrower).",
+        source: "Core Rulebook"
+    }, {
+        name: "Whirlwind Attack",
+        description: "You can strike nearby opponents in an amazing, spinning melee attack.",
+        prerequisites: "Dexterity 13, Intelligence 13, Melee Defense, base attack bonus +4.",
+        benefit: "As a full-round action, you can make an area attack with your melee weapon, striking every opponent within your reach. This whirlwind attack uses the area attack rules (see Area Attack); you make one attack roll and apply the result to every target in range.",
+        source: "Core Rulebook"
     }
 ]
