@@ -16,7 +16,7 @@ Species
             body (body of the additional section)
 ----------TEMPLATE----------
 {name : ,
- dsecription : ,
+ description : ,
  personality : ,
  physicalDescription : ,
  homeworlds : ,
@@ -25,6 +25,7 @@ Species
  adventures : ,
  speciesTraits : {
     abilityModifiers : ,
+    sizeText : ,
     size : ,
     speedText : ,
     speed : ,
@@ -32,7 +33,8 @@ Species
         {heading : ,
          body : }
     ]
- }
+ },
+source:
 }
 */
 
@@ -45,14 +47,17 @@ var species = [{name: "Humans",
                 exampleNames : "Anakin, Arani, Bail, Ben, Beru, Biggs, Boba, Corran, Dack, Dane, Galak, Garm, Han, Jango, Jodo, Lando, Leia, Luke, Mace, Mara, Obi-Wan, Owen, Padme, Qui-Gon, Sia-Lan, Rann, Talon, Vor'en, Wedge, Winter.",
                 adventures : "Humans aren't afraid to try anything, and Human adventurers are the most audacious, daring, and ambitious members of an audacious, daring, and ambitious species. A Human can earn glory by amassing power, weath, and fame. More than any other species, Humans champion causes rather than territories or groups.",
                 speciesTraits : {
+                sizeText : "As Medium creatures, Humans have no special bonuses or penalties due to size",
                 size : "Medium",
                 speedText : "Human base speed is six squares.",
                 speed : 6,
-                misc : [{heading : "Bonus Trained Skill", body : "Humans are versatile and accomplished at many tasks. A Human character chooses one additional trained skill at 1st level."}, {heading : "Bonus Feat", body : "Humans choose one bonus feat at 1st level"}, {heading : "Automatic Languages", body : "Basic" }]
+                misc : [{heading : "Bonus Trained Skill", body : "Humans are versatile and accomplished at many tasks. A Human character chooses one additional trained skill at 1st level."}, {heading : "Bonus Feat", body : "Humans choose one bonus feat at 1st level"}, {heading : "Automatic Languages", body : "Basic" }],
+                },
+                source: "Core Rulebook"
                 },
                 { name : "Blood Carver",
                 description : "Blood Carvers are a mysterious race rarely seen outsid their homeworld of Batorine. Those that leave, however, do so because they have been exiled. They gravitate tword the finnges of society because the Blood Carvers' reputation for being fearsome assassins. Except for exiles, Blood Carvers rarely act alone, and exiles find new tribes (often like-minded members of other species) to associate with. Freed from cultural restrictions, Blood Carvers seek out personal wealth, but most are content to get by with a moderate amount of comfort.",
-                personality : "on Batorine, Blood Carvers are fiercely loyal to their tribes and tribal leaders. Those who venture into the galaxy carry vestiges of this loyalty, transfering it to new allies made away from their home planet. Blood Carvers are unusually disdainful of material wealth and egotism, and find flattery and excess offensive. Blood Carvers strive to stamp out such traits, and some Blood Carvers are exiled from Batorine for showing hints of greed, gluttony, or pride.",
+                personality : "On Batorine, Blood Carvers are fiercely loyal to their tribes and tribal leaders. Those who venture into the galaxy carry vestiges of this loyalty, transfering it to new allies made away from their home planet. Blood Carvers are unusually disdainful of material wealth and egotism, and find flattery and excess offensive. Blood Carvers strive to stamp out such traits, and some Blood Carvers are exiled from Batorine for showing hints of greed, gluttony, or pride.",
                 physicalDescription : "Vaguely humanoid with golden skin, beaklike noses, and dark eyes, Blood Carvers are taller than Humans, despite their triple-segmented legs, Blood Carvers wear space, close-fitting clothing that allows them to move about with relative quiet, and they rarely, if ever, adorn themselves with jewelry. Tribal tatoos are common on Blood Carvers",
                 homeworlds : "Batorine is a temprate world in the Colonies region. Blood Carvers also maintain colonies on friendly worlds, including Coruscant and Alderaan, and pocket colonies of exiles have popped up on more distant worlds such as Nar Shaddaa",
                 languages : "Blood Carvers speak Batorese, a language that uses skin coloration and pheromones in addition to its verbal component. Non-Blood Carvers cannot speak or understand Batorese due to the complexities of the language, but Blood Carvers can also speak Basic.",
@@ -60,16 +65,18 @@ var species = [{name: "Humans",
                 adventures : "Blood Carver adventures make excellent spies, assassins, and scouts. They gravitate tword the scout and scoundrel classes, though some are soldiers. Force sensitivity is not unknown among Blood Carvers, though few join the Jedi Order.",
                 speciesTraits : {
                   abilityModifiers : "+2 Dexterity, -2 Wisdom, -2 Charisma. Blood Carvers are extremely agile but lack social skills.",
+                  sizeText : "As Medium creatures, Blood Carvers have no special bonuses or penalties due to size",
                   size : "Medium",
-                  speedText : "As Medium creatures, Blood Carvers have no special bonuses or penalties due to size",
+                  speedText : "Blood Carver's base speed is six squares.",
                   speed : 6,
                   misc : [{heading : "conditionalBonusFeat", body : "Blood Carvers who have Acrobatics as a trained skill gain Skill Focus (Acrobatics) as a bonus feat"},
                   {heading : "deathStrike", body: "Whenever a Blood Carver makes a melee attack against an opponent that is denied its Dexterity bonus to Reflex Defense, the Blood Carver's attack, if successful, deals +1 die of damage.",},
-                  {heading :"Automatic Languages", body : "Basic and Batorese" }]
-                  }
+                {heading :"Automatic Languages", body : "Basic and Batorese" }],
+                  },
+                 source: "Scum and Villainy"
                 },
                 {name : "Clawdite",
-                 dsecription :"A specially bred offshoot of Zolanders, Clawdites were genetically engineered to withstand the unsafe levels of radiation generated by an unstable sun. However, Clawdites developed an unexpected mutation - the ability to shapechange. The Zolanders deemed the clawdites a dire threat- a devious subspecies filled with wickedness. Therefor to gaurd against Clawdite treachery, the Zolanders sequester them in wretched ghettos, where they live as second-class citizens under the watchful eyes of their captors. The clawdites chafe under the tyrannical yoke place upon them, and those who can, flee, but more languish on their homeworld, struggling to find some way to be free. Count Dooku and the Separatist Movement offered the Clawdites the freedom they craved from the Zolanders, so many enlisted to support Count Dooku's war effort in exchange for his promise. The aid was short lived, for the Separatist Movement unraveleed with Count Dooku's death. Only after the fall of the Empire do the Clawdites finally rise up against the Zolanders, fighting a brutal civil war that comsumes the world in violence. The Clawdites eventually gain control of the planet, and in victory, they assert themselves as the dominat species. Free, the Clawdites court the New Republic and throw their support behind Alliance Intelligence organizations, using their unique talents to infiltrate the Yuuzhan Vong and sabotage equipment, gather intelligence, and assassinate critical targest. The Clawdites take on this dangerous wor because they are driven to support the cause of liberty, and for them, then ends always justify the means." ,
+                 description :"A specially bred offshoot of Zolanders, Clawdites were genetically engineered to withstand the unsafe levels of radiation generated by an unstable sun. However, Clawdites developed an unexpected mutation - the ability to shapechange. The Zolanders deemed the clawdites a dire threat- a devious subspecies filled with wickedness. Therefor to gaurd against Clawdite treachery, the Zolanders sequester them in wretched ghettos, where they live as second-class citizens under the watchful eyes of their captors. The clawdites chafe under the tyrannical yoke place upon them, and those who can, flee, but more languish on their homeworld, struggling to find some way to be free. Count Dooku and the Separatist Movement offered the Clawdites the freedom they craved from the Zolanders, so many enlisted to support Count Dooku's war effort in exchange for his promise. The aid was short lived, for the Separatist Movement unraveleed with Count Dooku's death. Only after the fall of the Empire do the Clawdites finally rise up against the Zolanders, fighting a brutal civil war that comsumes the world in violence. The Clawdites eventually gain control of the planet, and in victory, they assert themselves as the dominat species. Free, the Clawdites court the New Republic and throw their support behind Alliance Intelligence organizations, using their unique talents to infiltrate the Yuuzhan Vong and sabotage equipment, gather intelligence, and assassinate critical targest. The Clawdites take on this dangerous wor because they are driven to support the cause of liberty, and for them, then ends always justify the means." ,
                  personality : "Clawdites are staunchly committed to freedom and detest oppression in all its forms. Independent spirits, they go their own way, floolowing their hearts rather than abide by a set of rules imposed on them. Above all, Clawdites hate bigotry and prejudice and do not tolerate bullies. The more violent Clawdites are sure to make examples of those they encounter.",
                  physicalDescription : "In their natural forms, Clawdites are distinctly reptilian, their thick hides having a green or ochre cast. Their catlike eyes are yellow, set in a face that could pass for Human. Clawdites can alter their appearance in subtle ways when young, and as they age and practice their skills, they can assume the appearance of similarly sized species, even masking their equipment when it is held close to their bodies.",
                  homeworlds : "Clawdites orignate from Zolan, a planet awash with intense radiation from its sun.",
@@ -78,21 +85,23 @@ var species = [{name: "Humans",
                  adventures : "Clawdites who leave Zolan find work as bounty hunters, assassins, or spies. Their unique nature makes them espcially adept scoundrels or scouts.",
                  speciesTraits : {
                     abilityModifiers : "-2 Strength, +2 Charsma. Clawdites are frailer than other creatures but are extremely adept at masking their appearance.",
+                    sizeText : "As medium Creatures, Clawdites have no special bonuses or penalties due to size.",
                     size : "Medium",
-                    speedText : "As medium Creatures, Clawdites have no special bonuses or penalties due to size.",
+                    speedText : "Clawdite base speed is six squares.",
                     speed : 6,
                     misc : [
-                        {heading : "Shapeshift",
-                         body : "Clawdites are shapechangers and can alter their apperance at will (see the Deception skill description on page 64 of the Saga Edition core rulebook). A Clawdite gains +10 species bonus on Decepoion checks make to disguise appearance. Additionally, a Clawdire can dsiguise its appearance as a full-round action at no penalty."},
-                         {heading : "Startel",
-                          body : "Once per encounter, as a reaction to being attacked, the Clawdite can make a Deception check against the target's Will Defense. If successful, the attacker takes a -5 penalty on the attack roll."},
-                          {heading : "Automatic Languages",
-                           body : "Basic and Clawdite"}
-                       ]
-                  }
+                    {heading : "Shapeshift",
+                     body : "Clawdites are shapechangers and can alter their apperance at will (see the Deception skill description on page 64 of the Saga Edition core rulebook). A Clawdite gains +10 species bonus on Decepoion checks make to disguise appearance. Additionally, a Clawdire can dsiguise its appearance as a full-round action at no penalty."},
+                     {heading : "Startel",
+                      body : "Once per encounter, as a reaction to being attacked, the Clawdite can make a Deception check against the target's Will Defense. If successful, the attacker takes a -5 penalty on the attack roll."},
+                      {heading : "Automatic Languages",
+                       body : "Basic and Clawdite"}
+                   ]
+                },
+                 source: "Scum and Villainy"
                 },
                 {name : "Falleen",
-                 dsecription : "Of all the species to populate the galaxy, none are better known for their intoxicating appearance than the Falleen. An exotic reptilian people, they are favored for their chiseled physques and entrancing features. These qualities alone would solidfy their place among the more handsome species, but their pheromones make them irresistible to other species. Their gifts and allure enable the Falleen to move through other cultures with ease, but despite their advantages, Falleen prefer to remain mysterious, withdrawing wo their own world in their own system. They do not lack the technology or wherewithal to venture out into the stars, but their cultural predilections make such ventures undesirable. The Falleen regard themselves and their civilization to be among the greatest in the galaxy, and looking beyond their world, they find only chaos and strife-the products of crudity and backward beings. Associations with other species, therefor, are risky to the Falleen and are approached with caution. Falleen culture reinforces the sense of superiority that prevades this species. Their rigid caste society confines them to societal roles and provides stability and a sense of purpose. Other systems are far looser, with little to no regard for quality of birth or station. Rather than contaminate themselves and endanger their social system, the Falleen are content to remain apart from the rest of the galaxy",
+                 description : "Of all the species to populate the galaxy, none are better known for their intoxicating appearance than the Falleen. An exotic reptilian people, they are favored for their chiseled physques and entrancing features. These qualities alone would solidfy their place among the more handsome species, but their pheromones make them irresistible to other species. Their gifts and allure enable the Falleen to move through other cultures with ease, but despite their advantages, Falleen prefer to remain mysterious, withdrawing wo their own world in their own system. They do not lack the technology or wherewithal to venture out into the stars, but their cultural predilections make such ventures undesirable. The Falleen regard themselves and their civilization to be among the greatest in the galaxy, and looking beyond their world, they find only chaos and strife-the products of crudity and backward beings. Associations with other species, therefor, are risky to the Falleen and are approached with caution. Falleen culture reinforces the sense of superiority that prevades this species. Their rigid caste society confines them to societal roles and provides stability and a sense of purpose. Other systems are far looser, with little to no regard for quality of birth or station. Rather than contaminate themselves and endanger their social system, the Falleen are content to remain apart from the rest of the galaxy",
                  personality : "Falleen are notoriously sparce with words, reticent to the point of being withdrawn. Falleen believe emotional displays ar eunsophisticated. Theefore, they work to control their moods and expressions, deeply burying the wellspring of feelings that boil within.",
                  physicalDescription : "The Falleen are a reptilian species that have a similar shape and size to Humans. Delecate blue-green Scales, supple and flexible, cover their bodies, growing thicker and harder where they cover their spines. Falleen can and do grow hair, and for many, their hair is a point of pride. They wear their black tresses long, pulled up into topknots or back in elaborate braids. Some adorn their luxuriant hair with combs, beads, and ornate nets made of priceless wire and gemstones.",
                  homeworlds : "The Falleen hail from a wrld of the same name in the Mid Rim",
@@ -101,8 +110,9 @@ var species = [{name: "Humans",
                  adventures : "Falleen adventurers are privileged youth, the scions of the wealthy and powerful. It is customary on Falleen for young adults to embark on pilgrimages into the galaxy to explore and learn about other cultures. During this time, the Falleen pilgrims are expected to engage with other cultures,m finding their failings and successes. When the Falleen comes of age and claims her place at the head of her people, she can use her experiences to better rule her subjects.",
                  speciesTraits : {
                     abilityModifiers : "-2 Wisdom, +2 Charisma. Falleen possess uncommon magnetism and great interpersonal skills.",
+                    sizeText : "As medium creatures, Falleen have no special bonuses or penalties due to size",
                     size : "Medium",
-                    speedText : "As medium creatures, Falleen have no special bonuses or penalties due to size",
+                    speedText : "Falleen base speed is six squares.",
                     speed : 6,
                     misc : [
                         {heading : "Hold Breath",
@@ -114,10 +124,11 @@ var species = [{name: "Humans",
                            {heading : "Automatic Languages",
                             body : "Basic and Falleen"}
                     ]
-                 }
+                 },
+                 source: "Scum and Villainy"
                },
                {name : "Gand",
-                dsecription : "A strange species of insect creatures, the Gand have evolved in responce to the toxic atmosphere of their homeworld. In fact, two distinct types of Gand exitst. The more common has features typical of other species- lungs and the usuall assortmaent of internal organs. The other ype- rarely found outside Gand- has no lungs, and take in nutrients it needs through the material it consumes. Since the Gand cannot tolerate other atmospheres, and outsiders cannot breathe Gand's atmosphere, the species of this far-flung world developed without outside interference, resulting in a rich culture with peculiarities. The most notable aspect of the gand is their lack of individual itentity. A Gand must earn his name, his place, and his uniqueness through personal accomplishments. As such, the loweliest Gand see themselves as nothing more than aspects of the same whole.  The gand rarely permit non-Gand onto their world. Insular to the point of xenophobia, Gand have learned what can happen to the delicate balance of their society when they allow offworlders to pollute their people with the ideas of independance and self-worth. The closest most ever to come the the planet's surface are orbiting space stations, the principle hubs of Gand trand and commerce.",
+                description : "A strange species of insect creatures, the Gand have evolved in responce to the toxic atmosphere of their homeworld. In fact, two distinct types of Gand exitst. The more common has features typical of other species- lungs and the usuall assortmaent of internal organs. The other ype- rarely found outside Gand- has no lungs, and take in nutrients it needs through the material it consumes. Since the Gand cannot tolerate other atmospheres, and outsiders cannot breathe Gand's atmosphere, the species of this far-flung world developed without outside interference, resulting in a rich culture with peculiarities. The most notable aspect of the gand is their lack of individual itentity. A Gand must earn his name, his place, and his uniqueness through personal accomplishments. As such, the loweliest Gand see themselves as nothing more than aspects of the same whole.  The gand rarely permit non-Gand onto their world. Insular to the point of xenophobia, Gand have learned what can happen to the delicate balance of their society when they allow offworlders to pollute their people with the ideas of independance and self-worth. The closest most ever to come the the planet's surface are orbiting space stations, the principle hubs of Gand trand and commerce.",
                 personality : "Gand seem humble, soft-spoken, and self-deprecating. Until a Gand has achieved something of import, a Gand refers to itself as simply 'Gand' As the Gand achieves more accomplishments, it earns its identity from moving the third persion to the first person and eventually gaining a name. If Gand missteps or fails, it will likely demot itself until it repairs the damage to its character.",
                 physicalDescription : "Short, stocky, and fleshy in appearance, Gand have three fingers on each hand, and their faces are lumpy and unsettling. Gand have large, mutifaceted eyes that betray little emotion. All Gand encountered off-world use a special breathing apparatus that fits snugly into theri facial oriface.",
                 homeworlds : "Gand come from the poisonous world of Gand.",
@@ -126,8 +137,9 @@ var species = [{name: "Humans",
                 adventures : "Gand Leave their homeworld for a variety of reasons, usually as exiles, driven forth from their worlds and condemned to wander. Other occupy a silgularly unique role as mystic hunters called Findsmen.  Walking the path of truth, as they see it, they explore the galaxy, taking work as gaurdians, soldiers, and more commonly, as bounty hunters.",
                 speciesTraits : {
                    abilityModifiers : "+2 Wisdom, -2 Charisma. Gand society values widsom and cunning buth their off-putting appearance and strange manner make them difficult to understand.",
+                   sizeText : "As Medium creatures, Gand have no special bonuses or penalties due to size.",
                    size : "Medium",
-                   speedText : "As Medium creatures, Gand have no special bonuses or penalties due to size.",
+                   speedText : "Gand base speed is six squares.",
                    speed : 6,
                    misc : [
                        {heading : "Darkvision",
@@ -141,10 +153,11 @@ var species = [{name: "Humans",
                            {heading : "Automatic Languages",
                             body : "Gand"}
                    ]
-                }
+                },
+                source: "Scum and Villainy"
               },
               {name : "Jawa",
-               dsecription : "Jawas are short humanoids native to Tatooine. The Jawas have a poor reputation and are regarded as thieves at best, vermin at worst.  Their off-putting nature is made worse by the sour smell that clings to them and their inxplicable and nonsensical language. Jawas survive by scavenging lost technology in the desert wastes. 'Lost' for Jawas is ambiguous; they are likely to snatch up anything thats't not bolted down. Moisture farmers and others who live far from the spaceports regularly find that their belongings have vanished in the night with only tell-tale jawa tracks leading off into the wasteland. Jawas are intelligent and have a complex society. Gathering in extended tribes, Jawa life revolves around trade- for for wealth, but for survival. Jawas look for guidance from their shamans, usually a female Jawa with the ability to portend the future and cast vicious hexes. Once a yesr, the Jawa tribes gather in the Dune Sea to exchange sons and daughters, to swap stories and news, and to mingle amoung their own kind",
+               description : "Jawas are short humanoids native to Tatooine. The Jawas have a poor reputation and are regarded as thieves at best, vermin at worst.  Their off-putting nature is made worse by the sour smell that clings to them and their inxplicable and nonsensical language. Jawas survive by scavenging lost technology in the desert wastes. 'Lost' for Jawas is ambiguous; they are likely to snatch up anything thats't not bolted down. Moisture farmers and others who live far from the spaceports regularly find that their belongings have vanished in the night with only tell-tale jawa tracks leading off into the wasteland. Jawas are intelligent and have a complex society. Gathering in extended tribes, Jawa life revolves around trade- for for wealth, but for survival. Jawas look for guidance from their shamans, usually a female Jawa with the ability to portend the future and cast vicious hexes. Once a yesr, the Jawa tribes gather in the Dune Sea to exchange sons and daughters, to swap stories and news, and to mingle amoung their own kind",
                personality : "Jawas are peaceful, preferring flight to confrontations. They are, however, extremely cunning and capable of great treachery if given cause. A fleeing Jawa seeks out its allies and comes back in numbers to deal with threats. Even then, Jawas rarely confront tieir enemies directly, preferring to sabotage or steal vital equipment and let the desert do the nasty work for them. A Jawa can become fierce-even vicous- when cornered or when a shaman is threatened.",
                physicalDescription : "Jawas wear brown hooded cloaks to protect themselves from the oppressive heat of the twin suns of Tatooine. They dip their clothing in a rancid soup to better seal in their mositure. This gives them their infamously unpleasant odor. Jawas have sensitive, glowing orange eyes and are easily blinded by bright light. Beneath their coverings, Jawas are slight rodent creatures with tiny hands and feet.",
                homeworlds : "Jawas ar efound almost exclusively on Tatooine.",
@@ -153,8 +166,9 @@ var species = [{name: "Humans",
                adventures : "Family is the heart of Jawa Society  and as such, they are loath to leave their extended tribal groups. A lone Jawa likely has been driven out of its tribe, or it might be a lone survivor of an attack by Sand People of other desert denizens.",
                speciesTraits : {
                   abilityModifiers : "-2 Strength, +2 Dexterity. Jawas requick and agile, but they lack the strength of larger creatures.",
+                   sizeText : "As Small creatures, Jawas gain a +1 size bonus to their Reflex Defence and +5 size bonus on Stealth checks. However, their lifting and carrying limits are three-quarters of those medium creatures.",
                   size : "Small",
-                  speedText : "As Small creatures, Jawas gain a +1 size bonus to their Reflex Defence and +5 size bonus on Stealth checks. However, their lifting and carrying limits are three-quarters of those medium creatures.",
+                  speedText : "Jawa base speed is four squares.",
                   speed : 4,
                   misc : [
                       {heading : "Darkvision",
@@ -168,6 +182,63 @@ var species = [{name: "Humans",
                           {heading : "Automatic Languages",
                            body : "Jawa, Jawa Trade Language"},
                   ]
-               }
-              }
+               },
+               source: "Scum and Villainy"
+              },
+                {name : "Ryn",
+                description : "Ubiquitous in spaceports throughout the galaxy, Ryn are a species of nomads and adventurers, soundrels, minstrels, and rogues. No one is certain where the Ryn come from; no record of a homeworld exists, and Ryn culture, shuch as it is, requires them to never sleep in the same place twice. Some speculate that the Ryn were a race of warriors, dispatched to Core Worlds ages ago to contend with some threat, while others suggest that the Ryn were a tribe of ten thousand musicians gifted to a world that had no artists of their own. Either could be true, for the Ryn are as fearless in battle as they are skilled in music. for all their talents, Ryn find the galaxy largely inhospitable. they have a reputation for being untrustworthy and treacherous, dangerous to befriend and fickle in their loyalties. Although that is true of many Ryn, most are just free spirits looking to survive. They are among the hardest working people known. The Ryn are natural entertainers. Between jobs, they supplement their incomes through fortune-telling using sabacc cards (a game they are believed to have invented), singing, dancing, and any other musical arts.",
+                personality : "Wanderlust consumes the Ryn. They cannot abide confinement and constraint, and they itch to move on shortly after they arrive in a new place. Ryn are fun loving and flamboyand, but centuries of cruelty, oppression, and exploitation have taken their toll. This has led some Ryn to become more insular and secretive, which of course, does nothing to diminish the suspicion and distrust others have for the Ryn.",
+                physicalDescription : "Ryn are humanoid, but slightly shorter than Humans. All Ryn have thick, muscular tails that end in white tufts. Prehensile, their tails can support their weight and even act as a third arm. A fine coat of smoke-gray fur covers their bodies, while they grow thick white to blue-white hair on their heads. Males wear thin moustaches and beards. A Ryn's most distinctive feature is its nose. A chitinous organ, similar to a beak, it is perforated to allow the passage of air. Ryn can pipe sounds through these holes to create a variety of tones, whistles, and pops. Skilled Ryn can use these 'beaks' to create music.",
+                homeworlds : "The Ryn are believed to have come from somewhere among the Core Worlds, but they have traveled for so long that even the Ryn no longer remember from where they hail.",
+                languages : "Ryn all speak Basic and Ryn, and they are quick studies, learning languages from all over the galaxy.",
+                exampleNames : "Camarata, Cisgat, Clarani, Droma, Ferfer, Gaph, Lenya, Melisma, Mezza, Rosmany, R'vanna, Sapha",
+                adventures : "Ryn are born to adventure and are happiest when traveling and exploring. They rarely stay in any place for long and get agitated if forced to stay put",
+                speciesTraits : {
+                    abilityModifiers : "+2 Charisma, Ryn are gifted entertainers and performers",
+                    sizeText : "As Medium creatures, Ryn have no special bonuses or penalties due to size",
+                    size : "Medium",
+                    speedText : "Ryn base speed is 6 squares.",
+                    speed : 6,
+                    misc : [
+                        {heading : "Musical Beak",
+                         body : "Ryn can move air through their beaks to create pleasant tunes and notes. When using its musical beak to imitate sounds or noises to convey deceptive infomaiton, a Ryn can reroll Deception checks and take the better result. A Ryn can also throw his voice or project sounds from his musical beak out to a range ot 10 squares. As a swift action, a Ryn can use ventrilopuism to create a diversion to hide (see Deception)."},
+                        {heading : "Prehensile Tail",
+                        body : "Ryn have long tails nearly as strong and flexible as their hands. A Ryn can effectively hold (but not weild) a Small or smaller item with its tail. When holding a Medium or larger item with its tail, the Ryn is encumbered and considered to be carrying a heavy load."},
+                        {heading : "Connections",
+                        body : "Ryn benefit from extensive information network that spans the galaxy. Whenever they travel, they can contact other Ryn to learn rumors and gaurded infomation more easily than can other races. Whenever a Ryn character makes a Gather Information check to learn secret information, he can forgo the credit cost. If this check fails, the Ryn can try again, but must spend the credits as normal."},
+                        {heading : "Automatic Languages",
+                        body : "Basic and Ryn"},
+                        {heading : "Sabacc Fortune-Telling",
+                        body : "Ryn who learn to use a sabacc deck to tell fortunes have an uncanny knack for determining future events. Jedi speculate that the Ryn use the fortune-telling technique to tap into their inner Force sensitivity, but no Ryn has allowed the process to be studied thoroughly. A ryn with a sabacc deck can spend one minute performing the fortune-telling ritual to make an untrained Use the Force check as though using the Search Your Feelings application of the skill, designating a single course of action as the subject of the fortune-telling. The results provide signs and portents related to the outcome of the chosen course of action. This skill can be used even in areas where the Force is suppressed, since it is not linked to the Force in any traditional way."}
+                    ]
+                 },
+                 source: "Scum and Villainy"
+                },
+               {name : "Toydarian",
+             description : "Toydarians are small, winged aliens from the planet Toydaria. They are known as shrewd merchants and able con artists, even though many lead reputable lives. Because their homeworld is located within Hutt Space, many Toydarians who leave Toydaria find themselves either employed or indentured to Hutt criminal interests. Toydarians easily resist mind-affecting Force powers and are even more resistand to such abilities than their Hutt overlords. Toydarians have an unsavory reputation, but not all Toydarians are criminals. However, their sharp minds and keen wit often make those who deal with Toydarians feel like they have been taken advantage of. Most Toydarians have some degree of business savvy, and many have a penchant for gambling (even to their own detriment). Toydarians are capable of flight from birth, and can hover in place. Toydarians prefer to fly at all times, though the speed with which their wings beat consumes large amounts of enegry. As a result, Toydarians consume several times more food than humans do in a single day, and some of the bloodiest wars in Toydarian history have been fought over food supplies. Though they have intergrated technology into their society and culture, most Toydarians prefer the simple pleasures of small villages and tight-knit communities.",
+             personality : "Toydarians are proud and loyal beings who can sometimes border on sycopathic. Likewise, unsavory Toydarians put their keen minds to work deceiving their business pertners and tricking unsuspecting folk into being the victms of Toydarian confidence scams.",
+             physicalDescription : "Toydarians are rarely more than 1.6 meters tall. Toydarian skin color ranges from blue to green to pink. They are pudgy, with spindly limbs and a pair of fluttering wings that keeps them aloft.",
+             homeworlds : "Toydarians hail from Toydaria, an out-of-the-way planet in Hutt Space. Airspeeders are banned on Toydaria given the large amount of pedestrian air traffic",
+             languages : "Toydarians speed their own language, known at Toydarian, as well as Huttese. Toydarians also speak Basic, though Huttese is their true second language.",
+             exampleNames : "Reti, Watto, Zlato",
+             adventures : "Toydarian heros are likely among those Toydarians who have ventured forth from their home planet in search of fame, fortune, and glory. Toydarian heros tend to gravitate toward the scoundrel class where their sharp wits can be put to best use, though some may be nobles as well. Toydarians also favor the scout class, expecially for the extra mobility.",
+             speciesTraits : {
+                abilityModifiers : "-2 Strength, +2 Wisdom. Toydarians are weaker than Humans, but they are shrewd and accustomed to moving quickly to seal the deal",
+                sizeText : "As small creatures, Toydarians gain +1 size bonus to their Reflex Defense and +5 size bonus on Stealth checks. However, their lifting and carrying limits are three=quarters of those of Medium creatures.",
+                size : "Small",
+                speedText : "4 squares, fly 6 squares. Toydarians can hover in place, flying without needing to move. Toydarians have a maximum flying altitude of 2 squares.",
+                speed : 4,
+                flySpeed : 6,
+                misc : [
+                    {heading : "Conditional Bonus Feat",
+                     body : "Toydarians who are trained in Deception gain Skill Focus (Deception) as a bonus feat"},
+                     {heading : "Force Resistance",
+                     body : "Toydarians gain a +5 species bonus to Will Defense against any Use the Force Check with the mind-affecting descriptor"},
+                    {heading : "Automatic Languages",
+                     body : "Huttese, Toydarian"}
+                ]
+             },
+            source: "Scum and Villainy"
+            },
+
                 }]
