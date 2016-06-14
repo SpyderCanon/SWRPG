@@ -240,5 +240,34 @@ var species = [{name: "Humans",
              },
             source: "Scum and Villainy"
             },
+               {name : "Ubese",
+                 description : "Long ago, the Ubese were a peaceful species, dontent in the paradise of their garden planets. This changes when they encounter Old Republic scouts who seduce them with the power and might of advanced technology. Obsessed by these wonders, the Ubese devote their resources to the development of these technologies. As they succeed, they become worried about aggression from rival systems, so they develop weapon technology, dipping into dangerous devices banned throughout the galaxy. Fearing these weapons in the hands of a descidedly unstable population, the Old Republic makes a preemptive strike agains Ubese to destory weapons facilities and halt thair aggression. The attacks inadvertently detonate thos same weapons, resulting in a widspread contamination of all Ubese worlds and near extinction of the Ubese race. The only survivors are those on Uba IV, who struggle to subsist in the ashes of their civilization. The attacks, coupled with the Old republic's unwillingness to assist the beleagered people, breed resentment and hatred tword the rest of the galaxy. After thousands of years, the Ubese nurse thier animosity until thyey recover enough to begin again. The Ubese slowly emerge from their world, selling their services as mercenaries and bounty hunters, gaining a name for themselves as merciless warriors who are not above any tactic as long as they get the job done.",
+                 personality : "Ubese are aggressibly and wrlike. They blame all outsiders for the loss of thier civilization, so resentment and disgust consume the Ubese. They reserve their hate for the Jedi in particular, seeing them as responsible for their loss.",
+                 physicalDescription : "The Ubese are a species of graceful near-Humans. They are uniformly slender and frail compared to Humans, Acclimation to thier toxic atmosphere prevent the Ubese from breathing the air of other planets, so they are forced to wear body suits and breathing apparatuses. Beneath this equipment Ubese are hairless, with pleasant features, fair skin, and bright green or blue eyes. They have exotic features with narrow faces and overlarge eyes set above high cheekbones. The Ubese cannot produce sounds above a whisper, so they rely on voice modulators to communicate. Among their own kind, they use a complex language of hand signals, allowing them to exchange information and ideas in silence.",
+                 homeworlds : "the Ubese hail form Uba IV, the only living planet in a remote section of the Mid Rim Territories.",
+                 languages : "Ubese speak Basic and Ubese. They also use a special language of hand signals and gestures called Ubeninal",
+                 exampleNames : "Boushh, Dazaks, Kabrak, Norouhj, Savax, Torhhks.",
+                 adventures : "Ubese adventures are uncommon at best, considering the obstacles they must overcome to survive and their reliance on technology to survive off-world. Those that manage to make it work are mercenaries and bounty hunters, scouts and soldiers who hire themselves out to anyone who meets their price. Even they are no strangers to the Force, no Ubese are know to have become Jedi.",
+                 speciesTraits : {
+                    abilityModifiers : "-2 Constitution, +2 Dexterity. Ubese have slight builds, and they are quick and agile.",
+                    sizeText : "as Medium creatuers, Ubese have no special bonuses or penalties due to size.",
+                    size : "Meduim",
+                    speedText : "Ubese base speed is 6 squares.",
+                    speed : 6,
+                    misc : [
+                        {heading : "Aggressive",
+                         body : "If an Ubese character hits with a charge attack, the +2 bonus on attack rolls against the target persists for the duration of the encounter."},
+                        {heading : "Survival Instinct",
+                         body : "Ubese are tough and resilient, capable of withstanding the perils of even hostile worlds. An Ubese can reroll Survival checks, but the result of the reroll must be accepted, even if it is worse."},
+                        {heading : "Conditional Bonus Feat",
+                         body : "Ubese do not trust other cultures, so they are more suspicous of aliens. An Ubese with Perception as a trained skill gains Skill Focus (Perception) as a bonus feat."},
+                        {heading : "Special Equipment",
+                         body : "Ubese cannot tolerate the atmospheres of other worlds and must rely on breath masks to survive. Without a breath mask, an Ubese begins to suffocate (see Endurance). When Not on their homeworld, Ubese wear environmental suits to stave off the hazards found on other planets as will as to hide their appearance. An enviromental suit vunctions as a combat jumpsuit that also grants a +2 equipment bonus to Fortitude Defense. The suit also includes a voice modulatior to emulate the voice of a male ore female or mask the Ubese's gender. An Ubese environmental suit with breath mask and voice modulator costs 2000 credits, and a years supply of breathing filters costs 200 credits (50 credits on Ubese). Ubese characters begin with these items at not cost."},
+                        {heading : "Automatic Languages",
+                         body : "Basic, Ubeninal, and Ubese. Ubeninal is a sigh language ans serves as the primary medium for communication among Ubese"}
+                    ]
+                 },
+                source: "Scum and Villainy"
+                }
 
                 }]
